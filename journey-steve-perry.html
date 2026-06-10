@@ -4,162 +4,152 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Journey Is Not Journey Without Steve Perry — I'll Ask For It</title>
-<meta name="description" content="There are things you can replace in a band. The drummer. The bassist. The keyboard player nobody remembers. You cannot replace the voice.">
+<meta name="description" content="Steve Perry was not a member of Journey. Steve Perry was Journey. Everything that followed is a cover band with better equipment.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--black:#0a0a0a;--dark:#111;--card:#1a1a1a;--card2:#222;--accent:#c8f000;--accent2:#e8ff4d;--white:#f5f5f5;--muted:rgba(245,245,245,0.5);--border:rgba(255,255,255,0.08)}
+<style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--black:#0d0000;--dark:#1a0000;--card:#2a0505;--card2:#380808;--accent:#cc0000;--accent2:#e63333;--white:#f5f5f5;--muted:rgba(245,245,245,0.6);--border:rgba(204,0,0,0.3);}
 body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;line-height:1.6}
 nav{background:var(--black);border-bottom:2px solid var(--accent);position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem}
 .nav-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.6rem;letter-spacing:-.02em;color:var(--white);text-decoration:none;white-space:nowrap;padding:1rem 0}
 .nav-wordmark em{color:var(--accent);font-style:normal}
 .nav-links{display:flex;list-style:none;gap:0}
-.nav-links a{display:block;padding:.9rem 1.1rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s}
-.nav-links a:hover{color:var(--accent)}
-.nav-cta{background:var(--accent)!important;color:var(--black)!important;margin-left:.5rem}
+.nav-links a{display:block;padding:.9rem 1.1rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--accent);background:rgba(204,0,0,0.08)}
+.nav-cta{background:var(--accent);color:var(--white)!important;padding:.5rem 1.2rem!important;margin-left:.5rem}
+.nav-cta:hover{background:var(--accent2)!important;color:var(--white)!important}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.5rem}
 .hamburger span{display:block;width:24px;height:2px;background:var(--white)}
-@media(max-width:900px){.nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--black);border-bottom:2px solid var(--accent);padding:1rem 0;z-index:200}.nav-links.open{display:flex}.nav-links a{padding:1rem 2rem}.hamburger{display:flex}}
-.section-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
-.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2rem,4vw,3.5rem);text-transform:uppercase;line-height:1;margin-bottom:1.5rem}
-.section-title em{color:var(--accent);font-style:normal}
-.btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:var(--black);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;padding:.9rem 2rem;text-decoration:none;transition:background .2s}
+@media(max-width:900px){nav{position:relative}.nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--black);border-bottom:2px solid var(--accent);padding:1rem 0}.nav-links.open{display:flex}.nav-links a{padding:1rem 2rem}.hamburger{display:flex}}
+.btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;padding:.9rem 2rem;text-decoration:none;transition:background .2s}
 .btn-primary:hover{background:var(--accent2)}
+.btn-secondary{display:inline-flex;align-items:center;gap:.5rem;background:transparent;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;padding:.9rem 2rem;text-decoration:none;border:2px solid var(--border);transition:border-color .2s,color .2s}
+.btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
 footer{background:var(--dark);border-top:2px solid var(--accent);padding:3rem 2.5rem}
 .footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:3rem;flex-wrap:wrap}
-.footer-brand .wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;color:var(--white)}
+.footer-brand .wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;letter-spacing:-.02em;color:var(--white)}
 .footer-brand .wordmark em{color:var(--accent);font-style:normal}
 .footer-brand .tagline{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-top:.4rem}
 .footer-links h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
-.footer-links ul{list-style:none}
-.footer-links ul li{margin-bottom:.5rem}
+.footer-links ul{list-style:none}.footer-links ul li{margin-bottom:.5rem}
 .footer-links ul a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
 .footer-links ul a:hover{color:var(--accent)}
 .footer-bottom{max-width:1100px;margin:2rem auto 0;padding-top:1.5rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-copy{font-size:.82rem;color:var(--muted)}
 .footer-copy em{color:var(--accent);font-style:normal}
-@media(max-width:700px){.footer-inner{flex-direction:column}}
-</style>
-<style>
-.article-hero{padding:5rem 2.5rem 4rem;border-bottom:1px solid var(--border)}
-.article-hero-inner{max-width:820px;margin:0 auto}
-.article-breadcrumb{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem}
-.article-breadcrumb a{color:var(--accent);text-decoration:none}
-.article-breadcrumb a:hover{text-decoration:underline}
-.article-cat-label{display:inline-block;background:var(--accent);color:var(--black);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;padding:.25rem .75rem;margin-bottom:1.5rem}
-.article-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2.2rem,5vw,4.5rem);text-transform:uppercase;line-height:1;margin-bottom:1.5rem}
-.article-deck{font-size:1.25rem;color:var(--muted);line-height:1.75;margin-bottom:2rem;font-style:italic}
-.article-meta{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);padding-top:1.5rem;border-top:1px solid var(--border)}
-.article-meta em{color:var(--accent);font-style:normal}
-.article-body{max-width:720px;margin:0 auto;padding:4rem 2.5rem}
-.article-body p{font-size:1.1rem;color:rgba(245,245,245,0.82);line-height:1.9;margin-bottom:1.6rem}
-.article-body p strong{color:var(--white)}
-.article-body h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;text-transform:uppercase;color:var(--white);margin:3rem 0 1rem}
-.article-body h2 em{color:var(--accent);font-style:normal}
-.article-pull{border-left:4px solid var(--accent);padding:1.5rem 2rem;margin:2.5rem 0;background:var(--dark)}
-.article-pull p{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.5rem;text-transform:uppercase;color:var(--white);line-height:1.35;margin:0}
-.article-pull p em{color:var(--accent);font-style:normal}
-.article-verdict{background:var(--dark);border-top:4px solid var(--accent);padding:2.5rem;margin:3rem 0}
-.article-verdict-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.8rem}
-.article-verdict-text{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.6rem;text-transform:uppercase;line-height:1.2}
-.article-nav{max-width:820px;margin:0 auto;padding:0 2.5rem 4rem;display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap}
-.article-nav a{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);text-decoration:none}
-.article-nav a:hover{text-decoration:underline}
-</style>
+@media(max-width:700px){.footer-inner{flex-direction:column}.footer-bottom{flex-direction:column;text-align:center}}
+.article-hero{padding:5rem 2.5rem 3rem;border-bottom:1px solid var(--border)}
+.article-hero-inner{max-width:800px;margin:0 auto}
+.breadcrumb{display:flex;gap:.5rem;align-items:center;font-family:'Barlow Condensed',sans-serif;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem}
+.breadcrumb a{color:var(--muted);text-decoration:none;transition:color .2s}
+.breadcrumb a:hover{color:var(--accent)}
+.breadcrumb span{color:var(--accent)}
+.article-cat-badge{display:inline-block;background:var(--accent);color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;padding:.3rem .9rem;margin-bottom:1.2rem}
+.article-headline{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2.5rem,6vw,5rem);line-height:.95;text-transform:uppercase;letter-spacing:-.02em;margin-bottom:1.2rem}
+.article-headline em{color:var(--accent);font-style:normal}
+.article-deck{font-size:1.2rem;font-style:italic;color:var(--muted);line-height:1.7;max-width:660px;border-left:3px solid var(--accent);padding-left:1.2rem;margin-bottom:2rem}
+.article-meta{font-family:'Barlow Condensed',sans-serif;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.article-body{padding:4rem 2.5rem;border-bottom:1px solid var(--border)}
+.article-body-inner{max-width:720px;margin:0 auto}
+.prose p{font-size:1.05rem;color:var(--muted);line-height:1.9;margin-bottom:1.6rem}
+.prose strong{color:var(--white);font-weight:600}
+.pull-quote{border-left:4px solid var(--accent);padding:1.5rem 2rem;margin:2.5rem 0;background:var(--dark)}
+.pull-quote p{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.5rem;text-transform:uppercase;line-height:1.2;color:var(--white);margin:0}
+.pull-quote cite{display:block;margin-top:.8rem;font-family:'Barlow Condensed',sans-serif;font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-style:normal}
+.verdict-box{background:var(--dark);border:2px solid var(--accent);padding:2.5rem;margin-top:3rem}
+.verdict-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.verdict-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;text-transform:uppercase;margin-bottom:1rem}
+.verdict-text{color:var(--muted);font-size:1rem;line-height:1.8}
+.article-nav{padding:3rem 2.5rem;border-bottom:1px solid var(--border)}
+.article-nav-inner{max-width:720px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap}</style>
 </head>
 <body>
 <nav>
-  <a href="index.html" class="nav-wordmark">I'll Ask <em>For It</em></a>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="category-opinions.html">One Man's Opinion</a></li>
-    <li><a href="category-indy.html">Indy Institutions</a></li>
-    <li><a href="category-food.html">Food &amp; Drink</a></li>
-    <li><a href="category-music.html">Music</a></li>
-    <li><a href="category-sports.html">Sports</a></li>
-    <li><a href="category-travel.html">Worth the Trip</a></li>
-    <li><a href="category-nostalgia.html">Nostalgia</a></li>
-    <li><a href="about.html" class="nav-cta">About</a></li>
-  </ul>
-  <button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+<a href="index.html" class="nav-wordmark">I'll Ask <em>For It</em></a>
+<ul class="nav-links" id="navLinks">
+<li><a href="category-opinions.html">One Man's Opinion</a></li>
+<li><a href="category-indy.html">Indy Institutions</a></li>
+<li><a href="category-food.html">Food &amp; Drink</a></li>
+<li><a href="category-music.html">Music</a></li>
+<li><a href="category-sports.html">Sports</a></li>
+<li><a href="category-travel.html">Worth the Trip</a></li>
+<li><a href="category-nostalgia.html">Nostalgia</a></li>
+<li><a href="about.html" class="nav-cta">About</a></li>
+</ul>
+<button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
-<div class="article-hero">
-  <div class="article-hero-inner">
-    <p class="article-breadcrumb"><a href="index.html">Home</a> &nbsp;&rsaquo;&nbsp; <a href="category-music.html">Music</a></p>
-    <span class="article-cat-label">Music</span>
-    <h1 class="article-title">Journey Is Not Journey Without Steve Perry</h1>
-    <p class="article-deck">There are things you can replace in a band. The drummer. The bassist. The keyboard player nobody remembers. You cannot replace the voice. Steve Perry was not a member of Journey — Steve Perry was Journey.</p>
-    <p class="article-meta">I'll Ask For It &nbsp;&middot;&nbsp; <em>One Man's Opinion</em> &nbsp;&middot;&nbsp; Music</p>
-  </div>
+<section class="article-hero">
+<div class="article-hero-inner">
+<div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="category-music.html">Music</a><span>/</span>Steve Perry</div>
+<div class="article-cat-badge">Music</div>
+<h1 class="article-headline">Journey Is Not Journey <em>Without Steve Perry</em></h1>
+<p class="article-deck">There are things you can replace in a band. The drummer. The bassist. The keyboard player nobody remembers. You cannot replace the voice.</p>
+<p class="article-meta">I'll Ask For It · Music · One Man's Opinion</p>
 </div>
-<div class="article-body">
-  <p>Let's start with the facts, because the facts are not in dispute. Journey, formed in San Francisco in 1973, went through several lineup changes and musical identities before Steve Perry joined as lead vocalist in 1977. What happened next is the entire argument.</p>
-  <p>In the four years between Perry joining and the release of <strong>Escape</strong> in 1981, Journey became one of the highest-grossing concert acts in the world. "Don't Stop Believin'." "Open Arms." "Faithfully." "Any Way You Want It." Every song you know from Journey — every song that comes on at a wedding, at a bar, in a movie where someone is trying to feel something — was recorded with Steve Perry singing it.</p>
-
-  <div class="article-pull">
-    <p>"Steve Perry was not <em>a member</em> of Journey. Steve Perry <em>was</em> Journey."</p>
-  </div>
-
-  <h2>The <em>Voice</em> Argument</h2>
-  <p>There are voices in rock and roll history that define their bands so completely that the band becomes unthinkable without them. Freddie Mercury and Queen. Robert Plant and Led Zeppelin. Steve Perry and Journey. These are not interchangeable.</p>
-  <p>The counterargument, usually delivered by someone who wants to seem fair-minded, is that "the music is still good." And sure. The musicians in Journey are excellent. Neal Schon is a genuinely great guitarist. But when you hear <strong>Arnel Pineda</strong> — the current lead singer — the experience is one of recognition followed immediately by wrongness. It's the song you know. It's the melody you know. And it's not him.</p>
-  <p>This is not a criticism of Pineda, who is objectively talented and who was doing karaoke Justice before he was discovered on YouTube. The problem is not his voice. The problem is that he is not Steve Perry, and Journey is Steve Perry.</p>
-
-  <h2>The <em>Counterargument</em>, Addressed</h2>
-  <p>"But bands replace members all the time." Yes. And sometimes they remain the same band. AC/DC replaced Bon Scott with Brian Johnson, and that transition worked because Johnson brought something — a different energy, a different presence — that allowed the band to remain itself in a new form. The band was bigger than one voice.</p>
-  <p>Journey was not bigger than one voice. Journey <em>was</em> one voice. You can test this yourself: listen to the pre-Perry albums. They're fine. They're a competent rock band doing its thing. They are not the band that filled arenas for a decade. The voice is the thing.</p>
-
-  <div class="article-pull">
-    <p>"Everything that followed is a <em>cover band</em> with better equipment."</p>
-  </div>
-
-  <h2>Why This <em>Matters</em></h2>
-  <p>It matters because music history gets distorted when we allow the brand name to outlast the thing that made it mean something. "Journey" now refers to a touring entity that performs songs Steve Perry recorded. That touring entity is good at what it does. It is not Journey.</p>
-  <p>The songs hold up because Steve Perry made them. The arena-sized emotional impact of "Don't Stop Believin'" comes from a specific voice hitting specific notes with a specific kind of conviction that you don't develop — you either have it or you don't. Perry had it. No one after him has had it in the same degree.</p>
-  <p>This is not a complex opinion. It's just one that nobody says out loud at a wedding when the DJ plays "Open Arms" and everyone sings along to the recording of a man who hasn't been in the band since 1996.</p>
-
-  <div class="article-verdict">
-    <p class="article-verdict-label">The Verdict</p>
-    <p class="article-verdict-text">Journey Without Steve Perry Is a Tribute Band That Owns the Name. Full Stop.</p>
-  </div>
+</section>
+<section class="article-body">
+<div class="article-body-inner">
+<div class="prose">
+<p>Let's start with what's not in dispute. Journey, as a band, has always been excellent. Neal Schon is a world-class guitar player. The compositions are tight. The production has always been big. Nobody who genuinely loves rock music would argue that the band wasn't crafted with real skill and intention.</p>
+<p>None of that is the argument. The argument is simpler and more fundamental: <strong>Steve Perry's voice is the thing.</strong> It is the irreplaceable element. Without it, you have a very good band playing very good songs that everyone associates with a sound they can no longer actually hear.</p>
+<p>This is not nostalgia. This is physics.</p>
 </div>
-<div class="article-nav">
-  <a href="archive.html">← Back to Archive</a>
-  <a href="category-music.html">More Music →</a>
+<div class="pull-quote">
+<p>"Steve Perry was not a member of Journey. Steve Perry was Journey."</p>
+<cite>I'll Ask For It · The Verdict</cite>
 </div>
+<div class="prose">
+<p>When Arnel Pineda was brought in to front the band in 2007, the internet went appropriately insane about how good he was. And he is good. The range is there. The commitment is there. He's doing the job as well as anyone could do it. That's the point — he's doing someone else's job. He is, by definition and no fault of his own, a Steve Perry impersonator with a band behind him.</p>
+<p>Think about what "Don't Stop Believin'" means to you. Think about the specific emotional weight of that song. Now ask yourself: is any of that weight about the chord progression? The drum pattern? The piano intro? Or is it entirely about the voice that comes in and tells you about a small-town girl living in a lonely world?</p>
+<p>It's the voice. It has always been the voice.</p>
+<p>Steve Perry left the band in 1996, citing injury and grief — his partner had died of cancer. He walked away from one of the most successful touring operations in rock music history. That takes something. He came back briefly in 2018 with a solo record. It was good. It reminded everyone immediately why there's a difference between "Journey the band" and "Journey the sound." The sound is Perry. The band is the vessel.</p>
+<p>There's a broader principle here that applies to more than just Journey. It applies to any band where a singular voice has been replaced by a technically capable substitute. Yes, you can tour. Yes, you can fill arenas. Yes, the songs still work structurally. But you are not the same entity you were, and calling yourself by the same name is a philosophical choice that reasonable people can push back on.</p>
+<p>AC/DC replacing Bon Scott with Brian Johnson is often cited as a counterargument. Fair. Brian Johnson is genuinely Brian Johnson — he brought something original to the role. The band became something different but still its own thing. Journey with Arnel Pineda is not a different thing. It's the same thing, minus the irreplaceable element, doing its best to sound like the original.</p>
+</div>
+<div class="pull-quote">
+<p>"You cannot replace the voice. You can only replace the person."</p>
+<cite>I'll Ask For It · One Man's Opinion</cite>
+</div>
+<div class="prose">
+<p>None of this means you shouldn't see them live. The songs are great. Pineda is exceptional at what he does. If you love those songs and you want to hear them played by the people who recorded them (minus the one person who recorded the part you remember most), go. Have fun. You'll know every word.</p>
+<p>But know what you're watching. You're watching a band honor its own catalog. You're not watching Journey. Journey stopped being Journey the day Steve Perry left for good. Everything since has been archaeology — well-funded, well-executed, well-attended archaeology.</p>
+</div>
+<div class="verdict-box">
+<p class="verdict-label">↑ The Verdict</p>
+<h2 class="verdict-title">NOT JOURNEY. EXCELLENT JOURNEY COVER BAND.</h2>
+<p class="verdict-text">The songs are real. The band members are real. The shows are real. Steve Perry is the one thing they cannot replicate, and Steve Perry is the one thing that made Journey, Journey. This is not a criticism of Arnel Pineda, who is doing something genuinely impressive. This is a statement of fact about what the word "Journey" means and what it meant before 1996. One is a sound. The other is a memory of that sound, performed live.</p>
+</div>
+</div>
+</section>
+<section class="article-nav">
+<div class="article-nav-inner">
+<a href="index.html" class="btn-secondary">← Back to Home</a>
+<a href="archive.html" class="btn-primary">More Opinions →</a>
+</div>
+</section>
 <footer>
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <div class="wordmark">I'll Ask <em>For It</em></div>
-      <div class="tagline">Nothing But Time and Opinions</div>
-    </div>
-    <div class="footer-links">
-      <h4>Topics</h4>
-      <ul>
-        <li><a href="category-opinions.html">One Man's Opinion</a></li>
-        <li><a href="category-indy.html">Indy Institutions</a></li>
-        <li><a href="category-food.html">Food &amp; Drink</a></li>
-        <li><a href="category-music.html">Music</a></li>
-        <li><a href="category-sports.html">Sports</a></li>
-        <li><a href="category-travel.html">Worth the Trip</a></li>
-        <li><a href="category-nostalgia.html">Nostalgia</a></li>
-        <li><a href="hold-my-beer.html">Hold My Beer</a></li>
-      </ul>
-    </div>
-    <div class="footer-links">
-      <h4>The Site</h4>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="archive.html">Full Archive</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p class="footer-copy">&copy; 2026 <em>I'll Ask For It</em> &middot; Nothing But Time and Opinions</p>
-    <p class="footer-copy">Opinions are free. Agreement is optional.</p>
-  </div>
+<div class="footer-inner">
+<div class="footer-brand"><div class="wordmark">I'll Ask <em>For It</em></div><div class="tagline">Nothing But Time and Opinions</div></div>
+<div class="footer-links"><h4>Topics</h4><ul>
+<li><a href="category-opinions.html">One Man's Opinion</a></li>
+<li><a href="category-indy.html">Indy Institutions</a></li>
+<li><a href="category-food.html">Food &amp; Drink</a></li>
+<li><a href="category-music.html">Music</a></li>
+<li><a href="category-sports.html">Sports</a></li>
+<li><a href="category-travel.html">Worth the Trip</a></li>
+<li><a href="category-nostalgia.html">Nostalgia</a></li>
+<li><a href="hold-my-beer.html">Hold My Beer</a></li>
+</ul></div>
+<div class="footer-links"><h4>The Site</h4><ul>
+<li><a href="about.html">About</a></li>
+<li><a href="archive.html">Full Archive</a></li>
+<li><a href="about.html#contact">Contact</a></li>
+</ul></div>
+</div>
+<div class="footer-bottom">
+<p class="footer-copy">© 2026 <em>I'll Ask For It</em> · Nothing But Time and Opinions</p>
+<p class="footer-copy">Opinions are free. Agreement is optional.</p>
+</div>
 </footer>
 </body>
 </html>
