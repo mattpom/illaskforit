@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top 10 Restaurants — I'll Ask For It</title>
+<meta name="description" content="The places that earned permanent real estate in your rotation. Not just good — consequential.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--bg:#f5f5f5;
+--bg2:#ffffff;
+--card:#ffffff;
+--card2:#f0f0f0;
+--dark:#111111;
+--dark2:#222222;
+--accent:#cc0000;
+--accent2:#aa0000;
+--white:#ffffff;
+--text:#111111;
+--muted:#555555;
+--border:rgba(204,0,0,0.2);
+--border2:#dddddd;
+}
+body{background:var(--bg);color:var(--text);font-family:'Barlow',sans-serif;line-height:1.6}
+nav{background:var(--dark);border-bottom:3px solid var(--accent);position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem}
+.nav-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.6rem;letter-spacing:-.02em;color:#fff;text-decoration:none;white-space:nowrap;padding:1rem 0}
+.nav-wordmark em{color:var(--accent);font-style:normal}
+.nav-links{display:flex;list-style:none;gap:0}
+.nav-links a{display:block;padding:.9rem 1.1rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.7);text-decoration:none;transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--accent);background:rgba(204,0,0,0.1)}
+.nav-cta{background:var(--accent);color:#fff!important;padding:.5rem 1.2rem!important;margin-left:.5rem}
+.nav-cta:hover{background:var(--accent2)!important;color:#fff!important}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.5rem}
+.hamburger span{display:block;width:24px;height:2px;background:#fff}
+@media(max-width:900px){nav{position:relative}.nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--dark);border-bottom:2px solid var(--accent);padding:1rem 0;z-index:200}.nav-links.open{display:flex}.nav-links a{padding:1rem 2rem}.hamburger{display:flex}}
+.btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;padding:.9rem 2rem;text-decoration:none;transition:background .2s}
+.btn-primary:hover{background:var(--accent2)}
+.btn-secondary{display:inline-flex;align-items:center;gap:.5rem;background:transparent;color:var(--text);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;padding:.9rem 2rem;text-decoration:none;border:2px solid var(--accent);transition:border-color .2s,color .2s}
+.btn-secondary:hover{background:var(--accent);color:#fff}
+footer{background:var(--dark);border-top:3px solid var(--accent);padding:3rem 2.5rem;color:#f5f5f5}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:3rem;flex-wrap:wrap}
+.footer-brand .wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;letter-spacing:-.02em;color:#fff}
+.footer-brand .wordmark em{color:var(--accent);font-style:normal}
+.footer-brand .tagline{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-top:.4rem}
+.footer-links h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.footer-links ul{list-style:none}.footer-links ul li{margin-bottom:.5rem}
+.footer-links ul a{color:rgba(255,255,255,0.65);text-decoration:none;font-size:.9rem;transition:color .2s}
+.footer-links ul a:hover{color:var(--accent)}
+.footer-bottom{max-width:1100px;margin:2rem auto 0;padding-top:1.5rem;border-top:1px solid rgba(204,0,0,0.3);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-copy{font-size:.82rem;color:rgba(255,255,255,0.5)}
+.footer-copy em{color:var(--accent);font-style:normal}
+@media(max-width:700px){.footer-inner{flex-direction:column}.footer-bottom{flex-direction:column;text-align:center}}
+.ticker{background:var(--accent);overflow:hidden;padding:.4rem 0;white-space:nowrap}
+.ticker-inner{display:inline-block;animation:ticker 30s linear infinite}
+.ticker-inner span{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:#fff;padding:0 3rem}
+.ticker-inner span::before{content:"· "}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.champ-banner{background:var(--dark);border-bottom:3px solid var(--accent);padding:.6rem 2.5rem;text-align:center}
+.champ-banner p{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1rem;letter-spacing:.18em;text-transform:uppercase;color:#fff}
+.champ-banner em{color:var(--accent);font-style:normal}
+.hero{background:var(--dark);min-height:88vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:4rem 2.5rem;gap:4rem;border-bottom:3px solid var(--accent)}
+.hero-eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1.2rem}
+.hero-headline{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3.5rem,7vw,7rem);line-height:.95;text-transform:uppercase;letter-spacing:-.02em;margin-bottom:1.5rem;color:#fff}
+.hero-headline em{color:var(--accent);font-style:normal;display:block}
+.hero-sub{font-size:1.15rem;color:rgba(255,255,255,0.75);max-width:440px;margin-bottom:2.5rem;line-height:1.7}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-right{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(204,0,0,0.3)}
+.stat-card{background:#1a0000;padding:2.5rem 2rem;text-align:center}
+.stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:3.5rem;color:var(--accent);line-height:1}
+.stat-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-top:.5rem}
+@media(max-width:900px){.hero{grid-template-columns:1fr;min-height:auto;gap:3rem}.hero-right{grid-template-columns:1fr 1fr}}
+.section-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2rem,4vw,3.5rem);text-transform:uppercase;line-height:1;margin-bottom:.5rem;color:var(--dark)}
+.section-title em{color:var(--accent);font-style:normal}
+.about-band{background:var(--bg2);padding:4rem 2.5rem;border-bottom:2px solid var(--border2)}
+.about-band-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.about-text p{color:var(--muted);font-size:1.05rem;margin-bottom:1.2rem;line-height:1.8}
+@media(max-width:700px){.about-band-inner{grid-template-columns:1fr}}
+.categories{background:var(--bg);padding:4rem 2.5rem;border-bottom:2px solid var(--border2)}
+.categories-inner{max-width:1100px;margin:0 auto}
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border2);margin-top:2.5rem}
+.cat-card{background:var(--card);padding:2rem 1.8rem;cursor:pointer;transition:background .2s;text-decoration:none;display:block;border:1px solid transparent}
+.cat-card:hover{background:var(--accent);border-color:var(--accent)}
+.cat-card:hover .cat-name,.cat-card:hover .cat-desc{color:#fff}
+.cat-icon{font-size:2rem;margin-bottom:1rem}
+.cat-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--dark);margin-bottom:.6rem;transition:color .2s}
+.cat-desc{font-size:.88rem;color:var(--muted);line-height:1.6;transition:color .2s}
+@media(max-width:900px){.cat-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.cat-grid{grid-template-columns:1fr}}
+.fresh-pick-section{background:var(--bg2);padding:4rem 2.5rem;border-bottom:2px solid var(--border2)}
+.fresh-pick-section-inner{max-width:1100px;margin:0 auto}
+.fresh-pick{background:#fff;padding:3rem;position:relative;margin-top:2.5rem;border-left:5px solid var(--accent);box-shadow:0 2px 12px rgba(0,0,0,0.07)}
+.fresh-pick-tag{display:inline-block;background:var(--accent);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;padding:.3rem .8rem;position:absolute;top:1.5rem;right:1.5rem}
+.fresh-pick-cat{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:.8rem}
+.fresh-pick-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.4rem;text-transform:uppercase;line-height:1.05;margin-bottom:1rem;max-width:700px;color:var(--dark)}
+.fresh-pick-excerpt{color:var(--muted);font-size:1rem;max-width:640px;line-height:1.8;margin-bottom:2rem}
+.fresh-pick-meta{font-family:'Barlow Condensed',sans-serif;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.top10-section{background:var(--bg);padding:5rem 2.5rem;border-bottom:2px solid var(--border2)}
+.top10-inner{max-width:1100px;margin:0 auto}
+.top10-intro{color:var(--muted);font-size:1rem;max-width:600px;margin-top:.8rem;margin-bottom:3rem;line-height:1.7}
+.top10-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
+@media(max-width:900px){.top10-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.top10-grid{grid-template-columns:1fr}}
+.top10-card{background:#fff;border:1px solid var(--border2);border-top:4px solid var(--accent);padding:1.8rem;text-decoration:none;display:block;transition:box-shadow .2s,transform .2s;position:relative}
+.top10-card:hover{box-shadow:0 6px 20px rgba(204,0,0,0.12);transform:translateY(-3px)}
+.top10-card-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:3rem;color:var(--accent);line-height:1;margin-bottom:.5rem;opacity:.25}
+.top10-card-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+.top10-card-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.5rem;text-transform:uppercase;color:var(--dark);line-height:1.1;margin-bottom:.6rem}
+.top10-card-desc{font-size:.85rem;color:var(--muted);line-height:1.6;margin-bottom:1rem}
+.top10-card-cta{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.top10-card-cta::after{content:" →"}
+.letterman-badge{display:inline-block;background:var(--dark);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .9rem;margin-bottom:1.5rem}
+.letterman-badge em{color:var(--accent);font-style:normal}
+.featured{background:var(--bg2);padding:4rem 2.5rem;border-bottom:2px solid var(--border2)}
+.featured-inner{max-width:1100px;margin:0 auto}
+.featured-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border2);margin-top:2.5rem}
+.article-card{background:var(--card);padding:2rem;cursor:pointer;transition:background .2s;text-decoration:none;display:block}
+.article-card:hover{background:var(--accent)}
+.article-card:hover .article-title,.article-card:hover .article-excerpt,.article-card:hover .article-read-more{color:#fff}
+.article-card:hover .article-cat{color:rgba(255,255,255,0.8)}
+.article-cat{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:.8rem;transition:color .2s}
+.article-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.4rem;text-transform:uppercase;line-height:1.15;color:var(--dark);margin-bottom:.7rem;transition:color .2s}
+.article-excerpt{font-size:.88rem;color:var(--muted);line-height:1.65;transition:color .2s}
+.article-read-more{display:inline-flex;align-items:center;gap:.4rem;margin-top:1.2rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);transition:color .2s}
+.featured-read-more-wrap{margin-top:2.5rem}
+@media(max-width:900px){.featured-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.featured-grid{grid-template-columns:1fr}}
+.manifesto{background:var(--dark);padding:5rem 2.5rem;border-bottom:3px solid var(--accent);text-align:center}
+.manifesto-inner{max-width:760px;margin:0 auto}
+.manifesto-quote{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2rem,4vw,3rem);text-transform:uppercase;line-height:1.2;margin-bottom:1.5rem;color:#fff}
+.manifesto-quote em{color:var(--accent);font-style:normal}
+.manifesto-text{color:rgba(255,255,255,0.7);font-size:1.05rem;line-height:1.85}
+.series-band{background:var(--bg);padding:4rem 2.5rem;border-bottom:2px solid var(--border2)}
+.series-band-inner{max-width:1100px;margin:0 auto}
+.series-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border2);margin-top:2.5rem}
+.series-card{background:var(--card);padding:1.8rem;text-decoration:none;display:block;transition:background .2s;border:1px solid transparent}
+.series-card:hover{background:var(--accent)}
+.series-card:hover .series-name,.series-card:hover .series-desc{color:#fff}
+.series-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;line-height:1;margin-bottom:.5rem}
+.series-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dark);margin-bottom:.5rem;transition:color .2s}
+.series-desc{font-size:.85rem;color:var(--muted);transition:color .2s}
+@media(max-width:700px){.series-grid{grid-template-columns:1fr 1fr}}
+
+.list-hero{background:var(--dark);padding:4rem 2.5rem 3rem;border-bottom:3px solid var(--accent)}
+.list-hero-inner{max-width:800px;margin:0 auto}
+.list-hero-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.8rem}
+.list-hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2.5rem,6vw,5rem);text-transform:uppercase;line-height:.95;color:#fff;margin-bottom:1.2rem}
+.list-hero-subtitle{font-size:1.1rem;color:rgba(255,255,255,0.7);max-width:600px;line-height:1.7}
+.list-body{background:var(--bg);padding:4rem 2.5rem}
+.list-body-inner{max-width:800px;margin:0 auto}
+.list-intro{font-size:1.1rem;color:var(--muted);line-height:1.85;margin-bottom:3rem;padding-bottom:2rem;border-bottom:2px solid var(--border2)}
+.list-item{display:flex;gap:2rem;align-items:flex-start;padding:2rem 0;border-bottom:1px solid var(--border2)}
+.list-item:last-child{border-bottom:none}
+.list-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:4rem;color:var(--accent);line-height:1;min-width:80px;opacity:.35}
+.list-item-content{}
+.list-item-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;text-transform:uppercase;color:var(--dark);line-height:1.05;margin-bottom:.6rem}
+.list-item-desc{font-size:1rem;color:var(--muted);line-height:1.75}
+.list-item-note{display:inline-block;background:var(--accent);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;padding:.2rem .7rem;margin-top:.8rem}
+.back-link{display:inline-flex;align-items:center;gap:.5rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);text-decoration:none;margin-bottom:2.5rem}
+.back-link:hover{text-decoration:underline}
+@media(max-width:600px){.list-item{flex-direction:column;gap:.5rem}.list-num{font-size:2.5rem;min-width:auto}}
+</style>
+</head>
+<body>
+<nav>
+<a href="index.html" class="nav-wordmark">I'll Ask <em>For It</em></a>
+<ul class="nav-links" id="navLinks">
+<li><a href="category-opinions.html">One Man's Opinion</a></li>
+<li><a href="category-indy.html">Indy Institutions</a></li>
+<li><a href="category-food.html">Food &amp; Drink</a></li>
+<li><a href="category-music.html">Music</a></li>
+<li><a href="category-sports.html">Sports</a></li>
+<li><a href="category-travel.html">Worth the Trip</a></li>
+<li><a href="category-nostalgia.html">Nostalgia</a></li>
+<li><a href="about.html" class="nav-cta">About</a></li>
+</ul>
+<button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+<span></span><span></span><span></span>
+</button>
+</nav>
+<div class="ticker">
+<div class="ticker-inner">
+<span>One Man's Opinion</span><span>Indianapolis Institutions</span><span>Food &amp; Drink</span><span>Music</span><span>Sports</span><span>Worth the Trip</span><span>Nostalgia</span><span>Hold My Beer</span><span>One Man's Opinion</span><span>Indianapolis Institutions</span><span>Food &amp; Drink</span><span>Music</span><span>Sports</span><span>Worth the Trip</span><span>Nostalgia</span><span>Hold My Beer</span>
+</div>
+</div>
+<div class="champ-banner">
+<p>🏈 <em>2026 CFP National Champions · 16-0 · Indiana Hoosiers</em> &nbsp;·&nbsp; Nothing But Time and Opinions &nbsp;·&nbsp; <em>I'll Ask For It</em></p>
+</div>
+<section class="list-hero">
+<div class="list-hero-inner">
+<p class="list-hero-label">Food & Drink · Top 10 List</p>
+<h1 class="list-hero-title">Top 10 Restaurants</h1>
+<p class="list-hero-subtitle">The places that earned permanent real estate in your rotation. Not just good — consequential.</p>
+</div>
+</section>
+<section class="list-body">
+<div class="list-body-inner">
+<a href="index.html" class="back-link">← Back to Home</a>
+<p class="list-intro">Not a Michelin guide. Not a Yelp dump. This is the list of places that changed how you think about eating out. Some are fancy. Some are holes in the wall. All of them are right.</p>
+
+<div class="list-item">
+<div class="list-num">10</div>
+<div class="list-item-content">
+<div class="list-item-title">Pizzeria Bianco — Phoenix</div>
+<div class="list-item-desc">Chris Bianco proved that one person's obsession can become the best pizza in America. The wait is real. The pizza is realer. If you've been, you know. If you haven't, you have a trip to plan.</div>
+<span class="list-item-note">Worth the flight</span>
+</div>
+</div>
+<div class="list-item">
+<div class="list-num">09</div>
+<div class="list-item-content">
+<div class="list-item-title">St. Elmo Steak House — Indianapolis</div>
+<div class="list-item-desc">The shrimp cocktail will make your eyes water. The steaks are enormous. The history is longer than most careers. This is the restaurant Indianapolis uses to prove it has a restaurant.</div>
+<span class="list-item-note">Indy Institution</span>
+</div>
+</div>
+<div class="list-item">
+<div class="list-num">08</div>
+<div class="list-item-content">
+<div class="list-item-title">Slippery Noodle Inn — Indianapolis</div>
+<div class="list-item-desc">The oldest bar in Indiana. Blues seven nights a week. You can feel the decades in the floor. Some places have history. This one is history.</div>
+<span class="list-item-note">Indy Original</span>
+</div>
+</div>
+<div class="list-item">
+<div class="list-num">07</div>
+<div class="list-item-content">
+<div class="list-item-title">Cafe Boulud — NYC</div>
+<div class="list-item-desc">Daniel Boulud's prix-fixe changed the standard for what a meal could be. Technique you can taste. Service that doesn't make you feel watched. The kind of dinner you talk about for years.</div>
+<span class="list-item-note">Special Occasion</span>
+</div>
+</div>
+<div class="list-item">
+<div class="list-num">06</div>
+<div class="list-item-content">
+<div class="list-item-title">Café du Monde — New Orleans</div>
+<div class="list-item-desc">Beignets and café au lait at 2 AM. Powdered sugar on your shirt. The sound of the Quarter carrying across the river. Some experiences are not food — they're time capsules.</div>
+<span class="list-item-note">Bucket List</span>
+</div>
+</div>
+<div class="list-item">
+<div class="list-num">05</div>
+<div class="list-item-content">
+<div class="list-item-title">Harry & Izzy's — Indianapolis</div>
+<div class="list-item-desc">The steakhouse cousin that does everything right. The shrimp cocktail is famous for a reason. The pork chops are an argument-ender. Local legend that deserves national recognition.</div>
+<span class="list-item-note">Indy Best</span>
+</div>
+</div>
+<div class="list-item">
+<div class="list-num">04</div>
+<div class="list-item-content">
+<div class="list-item-title">Bar Nestor — San Sebastián</div>
+<div class="list-item-desc">Pintxos at a counter you'll barely find. Txakoli poured from height. The anchor bar of the best eating neighborhood in the world. If you're in the Parte Vieja, you start here.</div>
+<span class="list-item-note">Worth the Trip</span>
+</div>
+</div>
+<div class="list-item">
+<div class="list-num">03</div>
+<div class="list-item-content">
+<div class="list-item-title">Portillo's — Chicago</div>
+<div class="list-item-desc">The Italian beef is a religion. The cheese fries are a sacrament. Every city should have a Portillo's. Most cities don't deserve one. Chicago earned it.</div>
+<span class="list-item-note">Road Trip</span>
+</div>
+</div>
+<div class="list-item">
+<div class="list-num">02</div>
+<div class="list-item-content">
+<div class="list-item-title">Teibel's — Schererville, IN</div>
+<div class="list-item-desc">A regional institution that serves fried chicken and perch in a way that makes you wonder why everything else bothers. Unchanged for decades. Unapologetic about it. Correct.</div>
+<span class="list-item-note">Hidden Gem</span>
+</div>
+</div>
+<div class="list-item">
+<div class="list-num">01</div>
+<div class="list-item-content">
+<div class="list-item-title">Bluebeard — Indianapolis</div>
+<div class="list-item-desc">The restaurant that proved Mass Ave was ready. Farm-to-table that doesn't lecture you about it. Creative, consistent, and the kind of menu that makes you think about what's possible in this city.</div>
+<span class="list-item-note">Indy Modern</span>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="footer-inner">
+<div class="footer-brand">
+<div class="wordmark">I'll Ask <em>For It</em></div>
+<div class="tagline">Nothing But Time and Opinions</div>
+</div>
+<div class="footer-links">
+<h4>Topics</h4>
+<ul>
+<li><a href="category-opinions.html">One Man's Opinion</a></li>
+<li><a href="category-indy.html">Indy Institutions</a></li>
+<li><a href="category-food.html">Food &amp; Drink</a></li>
+<li><a href="category-music.html">Music</a></li>
+<li><a href="category-sports.html">Sports</a></li>
+<li><a href="category-travel.html">Worth the Trip</a></li>
+<li><a href="category-nostalgia.html">Nostalgia</a></li>
+<li><a href="hold-my-beer.html">Hold My Beer</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>Top 10 Lists</h4>
+<ul>
+<li><a href="top10-restaurants.html">Restaurants</a></li>
+<li><a href="top10-athletes.html">Athletes</a></li>
+<li><a href="top10-things-to-do.html">Things To Do</a></li>
+<li><a href="top10-trails.html">Trails</a></li>
+<li><a href="top10-indy-sports.html">Indy Sports Moments</a></li>
+<li><a href="top10-albums.html">Albums</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>The Site</h4>
+<ul>
+<li><a href="about.html">About</a></li>
+<li><a href="archive.html">Full Archive</a></li>
+<li><a href="about.html#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p class="footer-copy">© 2026 <em>I'll Ask For It</em> · Nothing But Time and Opinions</p>
+<p class="footer-copy">Opinions are free. Agreement is optional.</p>
+</div>
+</footer>
+</body>
+</html>
