@@ -3,195 +3,171 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Archive — I'll Ask For It</title>
-<meta name="description" content="Every opinion, ranked by nobody, organized by category. The full archive of I'll Ask For It.">
+<title>Full Archive — I'll Ask For It</title>
+<meta name="description" content="Every opinion, ranked by category. Nothing but time and opinions.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--black:#0a0a0a;--dark:#111;--card:#1a1a1a;--card2:#222;--accent:#c8f000;--accent2:#e8ff4d;--white:#f5f5f5;--muted:rgba(245,245,245,0.5);--border:rgba(255,255,255,0.08)}
+:root{--black:#0d0000;--dark:#1a0000;--card:#2a0505;--card2:#380808;--accent:#cc0000;--accent2:#e63333;--white:#f5f5f5;--muted:rgba(245,245,245,0.6);--border:rgba(204,0,0,0.3);}
 body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;line-height:1.6}
 nav{background:var(--black);border-bottom:2px solid var(--accent);position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem}
 .nav-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.6rem;letter-spacing:-.02em;color:var(--white);text-decoration:none;white-space:nowrap;padding:1rem 0}
 .nav-wordmark em{color:var(--accent);font-style:normal}
 .nav-links{display:flex;list-style:none;gap:0}
-.nav-links a{display:block;padding:.9rem 1.1rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s}
-.nav-links a:hover{color:var(--accent)}
-.nav-cta{background:var(--accent)!important;color:var(--black)!important;margin-left:.5rem}
+.nav-links a{display:block;padding:.9rem 1.1rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--accent);background:rgba(204,0,0,0.08)}
+.nav-cta{background:var(--accent);color:var(--white)!important;padding:.5rem 1.2rem!important;margin-left:.5rem}
+.nav-cta:hover{background:var(--accent2)!important;color:var(--white)!important}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.5rem}
 .hamburger span{display:block;width:24px;height:2px;background:var(--white)}
-@media(max-width:900px){.nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--black);border-bottom:2px solid var(--accent);padding:1rem 0;z-index:200}.nav-links.open{display:flex}.nav-links a{padding:1rem 2rem}.hamburger{display:flex}}
-.section-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
-.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2rem,4vw,3.5rem);text-transform:uppercase;line-height:1;margin-bottom:1.5rem}
-.section-title em{color:var(--accent);font-style:normal}
-.btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:var(--black);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;padding:.9rem 2rem;text-decoration:none;transition:background .2s}
+@media(max-width:900px){nav{position:relative}.nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--black);border-bottom:2px solid var(--accent);padding:1rem 0}.nav-links.open{display:flex}.nav-links a{padding:1rem 2rem}.hamburger{display:flex}}
+.btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;padding:.9rem 2rem;text-decoration:none;transition:background .2s}
 .btn-primary:hover{background:var(--accent2)}
 footer{background:var(--dark);border-top:2px solid var(--accent);padding:3rem 2.5rem}
 .footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:3rem;flex-wrap:wrap}
-.footer-brand .wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;color:var(--white)}
+.footer-brand .wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;letter-spacing:-.02em;color:var(--white)}
 .footer-brand .wordmark em{color:var(--accent);font-style:normal}
 .footer-brand .tagline{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-top:.4rem}
 .footer-links h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
-.footer-links ul{list-style:none}
-.footer-links ul li{margin-bottom:.5rem}
+.footer-links ul{list-style:none}.footer-links ul li{margin-bottom:.5rem}
 .footer-links ul a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
 .footer-links ul a:hover{color:var(--accent)}
 .footer-bottom{max-width:1100px;margin:2rem auto 0;padding-top:1.5rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-copy{font-size:.82rem;color:var(--muted)}
 .footer-copy em{color:var(--accent);font-style:normal}
-@media(max-width:700px){.footer-inner{flex-direction:column}}
-</style>
-<style>
+@media(max-width:700px){.footer-inner{flex-direction:column}.footer-bottom{flex-direction:column;text-align:center}}
 .page-hero{padding:5rem 2.5rem 3rem;border-bottom:1px solid var(--border)}
 .page-hero-inner{max-width:1100px;margin:0 auto}
-.page-hero-eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
-.page-hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3rem,6vw,6rem);text-transform:uppercase;line-height:.95;margin-bottom:1.5rem}
-.page-hero-title em{color:var(--accent);font-style:normal}
-.page-hero-sub{font-size:1.1rem;color:var(--muted);max-width:600px;line-height:1.7}
-.archive-body{max-width:1100px;margin:0 auto;padding:4rem 2.5rem}
-.archive-section{margin-bottom:4rem}
-.archive-section-header{display:flex;align-items:baseline;gap:1.5rem;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:2px solid var(--accent)}
-.archive-section-header h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;text-transform:uppercase}
-.archive-section-header a{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);text-decoration:none}
-.archive-section-header a:hover{text-decoration:underline}
-.archive-list{list-style:none}
-.archive-item{border-bottom:1px solid var(--border)}
-.archive-item a{display:flex;align-items:baseline;justify-content:space-between;gap:2rem;padding:1.2rem 0;text-decoration:none;transition:background .15s;padding-left:.5rem;padding-right:.5rem}
-.archive-item a:hover{background:rgba(200,240,0,.04)}
-.archive-item a:hover .archive-item-title{color:var(--accent)}
-.archive-item-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.15rem;text-transform:uppercase;color:var(--white);transition:color .2s;flex:1}
-.archive-item-cat{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
-.archive-item-arrow{color:var(--muted);font-size:.9rem;white-space:nowrap}
+.page-eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.page-headline{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3rem,7vw,6rem);line-height:.95;text-transform:uppercase;letter-spacing:-.02em;margin-bottom:1.5rem}
+.page-headline em{color:var(--accent);font-style:normal}
+.page-deck{font-size:1.1rem;color:var(--muted);max-width:540px;line-height:1.7}
+.archive-section{padding:4rem 2.5rem;border-bottom:1px solid var(--border)}
+.archive-inner{max-width:1100px;margin:0 auto}
+.section-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1.8rem,3vw,2.5rem);text-transform:uppercase;line-height:1;margin-bottom:2rem}
+.section-title em{color:var(--accent);font-style:normal}
+.article-list{list-style:none;display:flex;flex-direction:column;gap:1px;background:var(--border)}
+.article-list li{background:var(--dark)}
+.article-list a{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 2rem;text-decoration:none;transition:background .2s;gap:2rem}
+.article-list a:hover{background:var(--card2)}
+.article-list a:hover .al-title{color:var(--accent)}
+.al-cat{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem}
+.al-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:var(--white);transition:color .2s}
+.al-desc{font-size:.88rem;color:var(--muted);margin-top:.3rem}
+.al-arrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.2rem;color:var(--accent);flex-shrink:0}
+@media(max-width:600px){.article-list a{flex-direction:column;align-items:flex-start}.al-arrow{display:none}}
 </style>
 </head>
 <body>
 <nav>
-  <a href="index.html" class="nav-wordmark">I'll Ask <em>For It</em></a>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="category-opinions.html">One Man's Opinion</a></li>
-    <li><a href="category-indy.html">Indy Institutions</a></li>
-    <li><a href="category-food.html">Food &amp; Drink</a></li>
-    <li><a href="category-music.html">Music</a></li>
-    <li><a href="category-sports.html">Sports</a></li>
-    <li><a href="category-travel.html">Worth the Trip</a></li>
-    <li><a href="category-nostalgia.html">Nostalgia</a></li>
-    <li><a href="about.html" class="nav-cta">About</a></li>
-  </ul>
-  <button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+<a href="index.html" class="nav-wordmark">I'll Ask <em>For It</em></a>
+<ul class="nav-links" id="navLinks">
+<li><a href="category-opinions.html">One Man's Opinion</a></li>
+<li><a href="category-indy.html">Indy Institutions</a></li>
+<li><a href="category-food.html">Food &amp; Drink</a></li>
+<li><a href="category-music.html">Music</a></li>
+<li><a href="category-sports.html">Sports</a></li>
+<li><a href="category-travel.html">Worth the Trip</a></li>
+<li><a href="category-nostalgia.html">Nostalgia</a></li>
+<li><a href="about.html" class="nav-cta">About</a></li>
+</ul>
+<button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <p class="page-hero-eyebrow">Every Opinion, Documented</p>
-    <h1 class="page-hero-title">The Full <em>Archive</em></h1>
-    <p class="page-hero-sub">Everything written, organized by category. No algorithm. No suggested reading. Just the list.</p>
-  </div>
+<section class="page-hero">
+<div class="page-hero-inner">
+<p class="page-eyebrow">Everything, All of It</p>
+<h1 class="page-headline">The Full <em>Archive</em></h1>
+<p class="page-deck">Every opinion published, organized by category. Nothing is curated for you. That's your job.</p>
 </div>
-<div class="archive-body">
-
-  <div class="archive-section">
-    <div class="archive-section-header">
-      <h2>🎵 Music</h2>
-      <a href="category-music.html">All Music →</a>
-    </div>
-    <ul class="archive-list">
-      <li class="archive-item"><a href="journey-steve-perry.html"><span class="archive-item-title">Journey Is Not Journey Without Steve Perry</span><span class="archive-item-cat">Music</span><span class="archive-item-arrow">→</span></a></li>
-    </ul>
-  </div>
-
-  <div class="archive-section">
-    <div class="archive-section-header">
-      <h2>🍽️ Food &amp; Drink</h2>
-      <a href="category-food.html">All Food &amp; Drink →</a>
-    </div>
-    <ul class="archive-list">
-      <li class="archive-item"><a href="bagel-triumvirate.html"><span class="archive-item-title">The True Bagel Triumvirate</span><span class="archive-item-cat">Food &amp; Drink</span><span class="archive-item-arrow">→</span></a></li>
-    </ul>
-  </div>
-
-  <div class="archive-section">
-    <div class="archive-section-header">
-      <h2>🏆 Sports</h2>
-      <a href="category-sports.html">All Sports →</a>
-    </div>
-    <ul class="archive-list">
-      <li class="archive-item"><a href="wingman.html"><span class="archive-item-title">No, You Can Be My Wingman</span><span class="archive-item-cat">Sports</span><span class="archive-item-arrow">→</span></a></li>
-    </ul>
-  </div>
-
-  <div class="archive-section">
-    <div class="archive-section-header">
-      <h2>📼 Nostalgia</h2>
-      <a href="category-nostalgia.html">All Nostalgia →</a>
-    </div>
-    <ul class="archive-list">
-      <li class="archive-item"><a href="time-machine.html"><span class="archive-item-title">Time Machine</span><span class="archive-item-cat">Nostalgia</span><span class="archive-item-arrow">→</span></a></li>
-    </ul>
-  </div>
-
-  <div class="archive-section">
-    <div class="archive-section-header">
-      <h2>✈️ Worth the Trip</h2>
-      <a href="category-travel.html">All Travel →</a>
-    </div>
-    <ul class="archive-list">
-      <li class="archive-item"><a href="san-sebastian.html"><span class="archive-item-title">San Sebasti&aacute;n Changed the Baseline</span><span class="archive-item-cat">Worth the Trip</span><span class="archive-item-arrow">→</span></a></li>
-    </ul>
-  </div>
-
-  <div class="archive-section">
-    <div class="archive-section-header">
-      <h2>🏙️ Indy Institutions</h2>
-      <a href="category-indy.html">All Indy →</a>
-    </div>
-    <ul class="archive-list">
-      <li class="archive-item"><a href="buffalo-louies.html"><span class="archive-item-title">Buffalo Louie's and Why It Matters</span><span class="archive-item-cat">Indy Institutions</span><span class="archive-item-arrow">→</span></a></li>
-    </ul>
-  </div>
-
-  <div class="archive-section">
-    <div class="archive-section-header">
-      <h2>🍺 Hold My Beer</h2>
-      <a href="hold-my-beer.html">All Hold My Beer →</a>
-    </div>
-    <ul class="archive-list">
-      <li class="archive-item"><a href="hold-my-beer.html"><span class="archive-item-title">Hold My Beer: Volume One</span><span class="archive-item-cat">Hold My Beer</span><span class="archive-item-arrow">→</span></a></li>
-    </ul>
-  </div>
-
+</section>
+<section class="archive-section">
+<div class="archive-inner">
+<p class="section-label">🎵 Music</p>
+<h2 class="section-title">MUSIC <em>OPINIONS</em></h2>
+<ul class="article-list">
+<li><a href="journey-steve-perry.html"><div class="al-left"><div class="al-cat">Music · One Man's Opinion</div><div class="al-title">Journey Is Not Journey Without Steve Perry</div><div class="al-desc">You cannot replace the voice. Steve Perry was not a member of Journey — Steve Perry was Journey.</div></div><div class="al-arrow">→</div></a></li>
+</ul>
 </div>
+</section>
+<section class="archive-section">
+<div class="archive-inner">
+<p class="section-label">🍽️ Food &amp; Drink</p>
+<h2 class="section-title">FOOD <em>OPINIONS</em></h2>
+<ul class="article-list">
+<li><a href="bagel-triumvirate.html"><div class="al-left"><div class="al-cat">Food &amp; Drink</div><div class="al-title">The True Bagel Triumvirate</div><div class="al-desc">Not all bagels are created equal. There are three. Only three. Everything else is a roll with a hole.</div></div><div class="al-arrow">→</div></a></li>
+</ul>
+</div>
+</section>
+<section class="archive-section">
+<div class="archive-inner">
+<p class="section-label">🏆 Sports</p>
+<h2 class="section-title">SPORTS <em>OPINIONS</em></h2>
+<ul class="article-list">
+<li><a href="wingman.html"><div class="al-left"><div class="al-cat">Sports</div><div class="al-title">No, You Can Be My Wingman</div><div class="al-desc">The hierarchy of great sports duos. Who flew with whom. Why the number two guy doesn't get enough credit.</div></div><div class="al-arrow">→</div></a></li>
+</ul>
+</div>
+</section>
+<section class="archive-section">
+<div class="archive-inner">
+<p class="section-label">📼 Nostalgia</p>
+<h2 class="section-title">NOSTALGIA <em>OPINIONS</em></h2>
+<ul class="article-list">
+<li><a href="time-machine.html"><div class="al-left"><div class="al-cat">Nostalgia</div><div class="al-title">Time Machine</div><div class="al-desc">If you could go back to any single moment — not to change it, just to be there again — where do you land?</div></div><div class="al-arrow">→</div></a></li>
+</ul>
+</div>
+</section>
+<section class="archive-section">
+<div class="archive-inner">
+<p class="section-label">✈️ Worth the Trip</p>
+<h2 class="section-title">TRAVEL <em>OPINIONS</em></h2>
+<ul class="article-list">
+<li><a href="san-sebastian.html"><div class="al-left"><div class="al-cat">Worth the Trip</div><div class="al-title">San Sebastián Changed the Baseline</div><div class="al-desc">There are cities that make you better at being alive. San Sebastián is one of them.</div></div><div class="al-arrow">→</div></a></li>
+</ul>
+</div>
+</section>
+<section class="archive-section">
+<div class="archive-inner">
+<p class="section-label">🏙️ Indy Institutions</p>
+<h2 class="section-title">INDY <em>OPINIONS</em></h2>
+<ul class="article-list">
+<li><a href="buffalo-louies.html"><div class="al-left"><div class="al-cat">Indy Institutions</div><div class="al-title">Buffalo Louie's and Why It Matters</div><div class="al-desc">Some places exist and some places mean something. This is the difference between a bar and a place you remember.</div></div><div class="al-arrow">→</div></a></li>
+</ul>
+</div>
+</section>
+<section class="archive-section">
+<div class="archive-inner">
+<p class="section-label">🍺 Hold My Beer</p>
+<h2 class="section-title">HOLD MY <em>BEER</em></h2>
+<ul class="article-list">
+<li><a href="hold-my-beer.html"><div class="al-left"><div class="al-cat">Hold My Beer</div><div class="al-title">Hold My Beer: Volume One</div><div class="al-desc">The inaugural edition of the series that started when someone said those words and immediately proved them right.</div></div><div class="al-arrow">→</div></a></li>
+</ul>
+</div>
+</section>
 <footer>
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <div class="wordmark">I'll Ask <em>For It</em></div>
-      <div class="tagline">Nothing But Time and Opinions</div>
-    </div>
-    <div class="footer-links">
-      <h4>Topics</h4>
-      <ul>
-        <li><a href="category-opinions.html">One Man's Opinion</a></li>
-        <li><a href="category-indy.html">Indy Institutions</a></li>
-        <li><a href="category-food.html">Food &amp; Drink</a></li>
-        <li><a href="category-music.html">Music</a></li>
-        <li><a href="category-sports.html">Sports</a></li>
-        <li><a href="category-travel.html">Worth the Trip</a></li>
-        <li><a href="category-nostalgia.html">Nostalgia</a></li>
-        <li><a href="hold-my-beer.html">Hold My Beer</a></li>
-      </ul>
-    </div>
-    <div class="footer-links">
-      <h4>The Site</h4>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="archive.html">Full Archive</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p class="footer-copy">&copy; 2026 <em>I'll Ask For It</em> &middot; Nothing But Time and Opinions</p>
-    <p class="footer-copy">Opinions are free. Agreement is optional.</p>
-  </div>
+<div class="footer-inner">
+<div class="footer-brand"><div class="wordmark">I'll Ask <em>For It</em></div><div class="tagline">Nothing But Time and Opinions</div></div>
+<div class="footer-links"><h4>Topics</h4><ul>
+<li><a href="category-opinions.html">One Man's Opinion</a></li>
+<li><a href="category-indy.html">Indy Institutions</a></li>
+<li><a href="category-food.html">Food &amp; Drink</a></li>
+<li><a href="category-music.html">Music</a></li>
+<li><a href="category-sports.html">Sports</a></li>
+<li><a href="category-travel.html">Worth the Trip</a></li>
+<li><a href="category-nostalgia.html">Nostalgia</a></li>
+<li><a href="hold-my-beer.html">Hold My Beer</a></li>
+</ul></div>
+<div class="footer-links"><h4>The Site</h4><ul>
+<li><a href="about.html">About</a></li>
+<li><a href="archive.html">Full Archive</a></li>
+<li><a href="about.html#contact">Contact</a></li>
+</ul></div>
+</div>
+<div class="footer-bottom">
+<p class="footer-copy">© 2026 <em>I'll Ask For It</em> · Nothing But Time and Opinions</p>
+<p class="footer-copy">Opinions are free. Agreement is optional.</p>
+</div>
 </footer>
 </body>
 </html>
