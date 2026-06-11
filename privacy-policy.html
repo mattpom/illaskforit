@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — I'll Ask For It</title>
+<meta name="description" content="Privacy Policy for I'll Ask For It. A personal opinion site with nothing but time and opinions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--black:#0d0000;--dark:#1a0000;--card:#2a0505;--accent:#cc0000;--accent2:#e63333;--white:#f5f5f5;--muted:rgba(245,245,245,0.6);--border:rgba(204,0,0,0.3);}
+body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;line-height:1.6}
+nav{background:var(--black);border-bottom:2px solid var(--accent);position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem}
+.nav-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.6rem;letter-spacing:-.02em;color:var(--white);text-decoration:none;white-space:nowrap;padding:1rem 0}
+.nav-wordmark em{color:var(--accent);font-style:normal}
+.nav-links{display:flex;list-style:none;gap:0}
+.nav-links a{display:block;padding:.9rem 1.1rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--accent);background:rgba(204,0,0,0.08)}
+.nav-cta{background:var(--accent);color:var(--white)!important;padding:.5rem 1.2rem!important;margin-left:.5rem}
+.nav-cta:hover{background:var(--accent2)!important;color:var(--white)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.5rem}
+.hamburger span{display:block;width:24px;height:2px;background:var(--white)}
+@media(max-width:900px){nav{position:relative}.nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--black);border-bottom:2px solid var(--accent);padding:1rem 0}.nav-links.open{display:flex}.nav-links a{padding:1rem 2rem}.hamburger{display:flex}}
+.btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;padding:.9rem 2rem;text-decoration:none;transition:background .2s}
+.btn-primary:hover{background:var(--accent2)}
+footer{background:var(--dark);border-top:2px solid var(--accent);padding:3rem 2.5rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:3rem;flex-wrap:wrap}
+.footer-brand .wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;letter-spacing:-.02em;color:var(--white)}
+.footer-brand .wordmark em{color:var(--accent);font-style:normal}
+.footer-brand .tagline{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-top:.4rem}
+.footer-links h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.footer-links ul{list-style:none}
+.footer-links ul li{margin-bottom:.5rem}
+.footer-links ul a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.footer-links ul a:hover{color:var(--accent)}
+.footer-bottom{max-width:1100px;margin:2rem auto 0;padding-top:1.5rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-copy{font-size:.82rem;color:var(--muted)}
+.footer-copy em{color:var(--accent);font-style:normal}
+.footer-legal{display:flex;gap:1.5rem}
+.footer-legal a{font-size:.82rem;color:var(--muted);text-decoration:none;transition:color .2s}
+.footer-legal a:hover{color:var(--accent)}
+@media(max-width:700px){.footer-inner{flex-direction:column}.footer-bottom{flex-direction:column;text-align:center}}
+.page-hero{padding:5rem 2.5rem 3rem;border-bottom:1px solid var(--border)}
+.page-hero-inner{max-width:900px;margin:0 auto}
+.page-eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.page-headline{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3rem,7vw,6rem);line-height:.95;text-transform:uppercase;letter-spacing:-.02em;margin-bottom:1.5rem}
+.page-headline em{color:var(--accent);font-style:normal}
+.page-deck{font-size:1.2rem;color:var(--muted);max-width:620px;line-height:1.75}
+.content-section{padding:4rem 2.5rem;border-bottom:1px solid var(--border)}
+.content-inner{max-width:720px;margin:0 auto}
+.section-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1.8rem,3vw,2.8rem);text-transform:uppercase;line-height:1;margin-bottom:1.5rem}
+.prose p{color:var(--muted);font-size:1.05rem;line-height:1.85;margin-bottom:1.4rem}
+.prose h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;letter-spacing:.1em;text-transform:uppercase;color:var(--white);margin:2rem 0 .75rem}
+.prose strong{color:var(--white);font-weight:600}
+.prose a{color:var(--accent);text-decoration:none}
+.prose a:hover{text-decoration:underline}
+.effective-date{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.back-section{padding:3rem 2.5rem}
+.back-inner{max-width:720px;margin:0 auto}
+</style>
+</head>
+<body>
+<nav>
+<a href="index.html" class="nav-wordmark">I'll Ask <em>For It</em></a>
+<ul class="nav-links" id="navLinks">
+<li><a href="category-opinions.html">One Man's Opinion</a></li>
+<li><a href="category-indy.html">Indy Institutions</a></li>
+<li><a href="category-food.html">Food &amp; Drink</a></li>
+<li><a href="category-music.html">Music</a></li>
+<li><a href="category-sports.html">Sports</a></li>
+<li><a href="category-travel.html">Worth the Trip</a></li>
+<li><a href="category-nostalgia.html">Nostalgia</a></li>
+<li><a href="about.html" class="nav-cta">About</a></li>
+</ul>
+<button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<section class="page-hero">
+<div class="page-hero-inner">
+<p class="page-eyebrow">Legal</p>
+<h1 class="page-headline"><em>Privacy</em> Policy</h1>
+<p class="page-deck">This site collects almost nothing. Here's exactly what that means.</p>
+</div>
+</section>
+<section class="content-section">
+<div class="content-inner">
+<p class="effective-date">Effective Date: June 10, 2026 &nbsp;&middot;&nbsp; Last Updated: June 10, 2026</p>
+<div class="prose">
+<p>I'll Ask For It ("the Site," "we," "us," or "our") is a personal opinion website operated by an individual at <strong>illaskforit.com</strong>. This Privacy Policy explains what information — if any — is collected when you visit the Site, how it is used, and what rights you have regarding that information.</p>
+<p>By accessing or using the Site, you acknowledge that you have read and understood this Privacy Policy.</p>
+<h3>1. Information We Collect</h3>
+<p><strong>No personally identifiable information is collected directly by this Site.</strong> There are no account registrations, contact forms, newsletter signups, or comment systems. You can read every page on this Site without providing any information about yourself.</p>
+<p>However, certain information may be collected automatically through third-party services used to deliver this Site:</p>
+<p><strong>GitHub Pages (Hosting):</strong> This Site is hosted on GitHub Pages, a service provided by GitHub, Inc. GitHub may collect server log data including your IP address, browser type, referring/exit pages, and timestamps when you access the Site. This data is subject to <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub's Privacy Statement</a>.</p>
+<p><strong>Google Fonts:</strong> This Site loads fonts from Google Fonts, a service provided by Google LLC. When fonts are loaded, your browser makes a request to Google's servers, which may log your IP address and browser information. This data is subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</p>
+<h3>2. Cookies and Tracking</h3>
+<p>This Site does not set any cookies. We do not use tracking pixels, analytics scripts, advertising networks, or any behavioral tracking technology. There is no analytics platform (such as Google Analytics) installed on this Site.</p>
+<p>Third-party services used for hosting and font delivery (GitHub Pages and Google Fonts) may set their own cookies or employ their own tracking mechanisms. We encourage you to review the privacy policies of those services directly.</p>
+<h3>3. How Information Is Used</h3>
+<p>We do not collect or process personal data. Any data collected by third-party infrastructure providers (GitHub, Google) is used by those providers in accordance with their own privacy policies and is not accessible to or controlled by us.</p>
+<h3>4. Data Sharing and Disclosure</h3>
+<p>We do not sell, rent, trade, or otherwise transfer any information about visitors to third parties. We have no data to share. If we were ever compelled by law to disclose user information, we would have nothing to provide — because we do not collect it.</p>
+<h3>5. Children's Privacy</h3>
+<p>This Site is not directed to children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can take appropriate action.</p>
+<h3>6. External Links</h3>
+<p>The Site may contain links to external websites. This Privacy Policy applies only to <strong>illaskforit.com</strong>. We are not responsible for the privacy practices or content of any external sites. We encourage you to review the privacy policy of any site you visit.</p>
+<h3>7. Data Security</h3>
+<p>Since we do not collect personal data, there is no personal data for us to secure. The Site is served over HTTPS to protect data in transit between your browser and our hosting provider. No sensitive information is transmitted through this Site.</p>
+<h3>8. Your Rights</h3>
+<p>Depending on your jurisdiction, you may have rights regarding personal data under laws such as the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), or other applicable privacy laws. Because we do not collect personal data, there is generally no data to access, correct, delete, or port. If you have questions or concerns about your rights, you may contact us at the address below.</p>
+<h3>9. Changes to This Policy</h3>
+<p>We reserve the right to update this Privacy Policy at any time. Changes will be reflected by updating the "Last Updated" date at the top of this page. Continued use of the Site after any changes constitutes your acceptance of the updated policy. We encourage you to review this page periodically.</p>
+<h3>10. Contact</h3>
+<p>This is a personal opinion site. If you have questions about this Privacy Policy or wish to exercise any rights, you can reach us through the contact information listed on the <a href="about.html">About page</a>.</p>
+</div>
+</div>
+</section>
+<section class="back-section">
+<div class="back-inner">
+<a href="index.html" class="btn-primary">← Back to the Opinions</a>
+</div>
+</section>
+<footer>
+<div class="footer-inner">
+<div class="footer-brand"><div class="wordmark">I'll Ask <em>For It</em></div><div class="tagline">Nothing But Time and Opinions</div></div>
+<div class="footer-links"><h4>Topics</h4><ul>
+<li><a href="category-opinions.html">One Man's Opinion</a></li>
+<li><a href="category-indy.html">Indy Institutions</a></li>
+<li><a href="category-food.html">Food &amp; Drink</a></li>
+<li><a href="category-music.html">Music</a></li>
+<li><a href="category-sports.html">Sports</a></li>
+<li><a href="category-travel.html">Worth the Trip</a></li>
+<li><a href="category-nostalgia.html">Nostalgia</a></li>
+<li><a href="hold-my-beer.html">Hold My Beer</a></li>
+</ul></div>
+<div class="footer-links"><h4>The Site</h4><ul>
+<li><a href="about.html">About</a></li>
+<li><a href="archive.html">Full Archive</a></li>
+<li><a href="about.html#contact">Contact</a></li>
+<li><a href="privacy-policy.html">Privacy Policy</a></li>
+<li><a href="terms-of-use.html">Terms of Use</a></li>
+</ul></div>
+</div>
+<div class="footer-bottom">
+<p class="footer-copy">&#169; 2026 <em>I'll Ask For It</em> &middot; Nothing But Time and Opinions</p>
+<div class="footer-legal">
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="terms-of-use.html">Terms of Use</a>
+</div>
+</div>
+</footer>
+</body>
+</html>
