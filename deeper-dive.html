@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deeper Dive — I'll Ask For It</title>
+<meta name="description" content="More opinions, behind-the-scenes finds, and visual inspiration -- the deeper dive into everything I'll Ask For It covers.">
+<meta property="og:site_name" content="I'll Ask For It">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Deeper Dive | I'll Ask For It">
+<meta property="og:description" content="More opinions, behind-the-scenes finds, and visual inspiration -- the deeper dive into everything I'll Ask For It covers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--bg:#f5f5f5;
+--bg2:#ffffff;
+--card:#ffffff;
+--card2:#f0f0f0;
+--dark:#111111;
+--dark2:#222222;
+--accent:#cc0000;
+--accent2:#aa0000;
+--white:#ffffff;
+--text:#111111;
+--muted:#555555;
+--border:rgba(204,0,0,0.2);
+--border2:#dddddd;
+}
+body{background:var(--bg);color:var(--text);font-family:'Barlow',sans-serif;line-height:1.6}
+nav{background:var(--dark);border-bottom:3px solid var(--accent);position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem}
+.nav-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.6rem;letter-spacing:-.02em;color:#fff;text-decoration:none;white-space:nowrap;padding:1rem 0}
+.nav-wordmark em{color:var(--accent);font-style:normal}
+.nav-links{display:flex;list-style:none;gap:0}
+.nav-links a{display:block;padding:.9rem 1.1rem;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.7);text-decoration:none;transition:color .2s,background .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--accent);background:rgba(204,0,0,0.1)}
+.nav-cta{background:var(--accent);color:#fff!important;padding:.5rem 1.2rem!important;margin-left:.5rem}
+.nav-cta:hover{background:var(--accent2)!important;color:#fff!important}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.5rem}
+.hamburger span{display:block;width:24px;height:2px;background:#fff}
+@media(max-width:900px){nav{position:relative}.nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--dark);border-bottom:2px solid var(--accent);padding:1rem 0;z-index:200}.nav-links.open{display:flex}.nav-links a{padding:1rem 2rem}.hamburger{display:flex}}
+footer{background:var(--dark);border-top:3px solid var(--accent);padding:3rem 2.5rem;color:#f5f5f5}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:3rem;flex-wrap:wrap}
+.footer-brand .wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;letter-spacing:-.02em;color:#fff}
+.footer-brand .wordmark em{color:var(--accent);font-style:normal}
+.footer-brand .tagline{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-top:.4rem}
+.footer-links h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.footer-links ul{list-style:none}.footer-links ul li{margin-bottom:.5rem}
+.footer-links ul a{color:rgba(255,255,255,0.65);text-decoration:none;font-size:.9rem;transition:color .2s}
+.footer-links ul a:hover{color:var(--accent)}
+.footer-bottom{max-width:1100px;margin:2rem auto 0;padding-top:1.5rem;border-top:1px solid rgba(204,0,0,0.3);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-copy{font-size:.82rem;color:rgba(255,255,255,0.5)}
+.footer-copy em{color:var(--accent);font-style:normal}
+@media(max-width:700px){.footer-inner{flex-direction:column}.footer-bottom{flex-direction:column;text-align:center}}
+.page-hero{background:var(--dark);padding:5rem 2.5rem 3.5rem;border-bottom:3px solid var(--accent)}
+.page-hero-inner{max-width:1100px;margin:0 auto}
+.hero-eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1.2rem}
+.page-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2.8rem,6vw,5rem);line-height:.95;text-transform:uppercase;letter-spacing:-.02em;margin-bottom:1.2rem;color:#fff}
+.page-title em{color:var(--accent);font-style:normal}
+.page-sub{font-size:1.05rem;color:rgba(255,255,255,0.75);max-width:600px;line-height:1.7}
+.section-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2rem,4vw,3rem);text-transform:uppercase;line-height:1;margin-bottom:.5rem;color:var(--dark)}
+.section-title em{color:var(--accent);font-style:normal}
+.intro-band{background:var(--bg2);padding:4rem 2.5rem;border-bottom:2px solid var(--border2)}
+.intro-band-inner{max-width:1100px;margin:0 auto}
+.intro-band-inner p{color:var(--muted);font-size:1.05rem;margin-bottom:1.2rem;line-height:1.8;max-width:760px}
+.pin-section{background:var(--bg);padding:4rem 2.5rem 5rem}
+.pin-section-inner{max-width:1100px;margin:0 auto}
+.pin-embed-wrap{background:#fff;border:1px solid var(--border2);border-top:4px solid var(--accent);padding:2rem;margin-top:2.5rem;min-height:200px}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7VE02N4CK7"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-7VE02N4CK7');
+</script>
+</head>
+<body>
+<nav>
+<a href="index.html" class="nav-wordmark">I'll Ask <em>For It</em></a>
+<ul class="nav-links" id="navLinks">
+<li><a href="category-opinions.html">One Man's Opinion</a></li>
+<li><a href="category-indy.html">Indy Institutions</a></li>
+<li><a href="category-food.html">Food &amp; Drink</a></li>
+<li><a href="category-music.html">Music</a></li>
+<li><a href="category-sports.html">Sports</a></li>
+<li><a href="category-travel.html">Worth the Trip</a></li>
+<li><a href="category-nostalgia.html">Nostalgia</a></li>
+<li><a href="things-you-didnt-know-you-needed.html">Shopping</a></li><li><a href="deeper-dive.html" class="active">Deeper Dive</a></li><li><a href="about.html" class="nav-cta">About</a></li>
+</ul>
+<button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+<span></span><span></span><span></span>
+</button>
+</nav>
+<header class="page-hero">
+<div class="page-hero-inner">
+<p class="hero-eyebrow">Behind the Opinions</p>
+<h1 class="page-title">Deeper<br><em>Dive.</em></h1>
+<p class="page-sub">The visual side of I'll Ask For It -- finds, inspiration, and extras that don't fit into a straight opinion piece. Updated straight from the source.</p>
+</div>
+</header>
+<section class="intro-band">
+<div class="intro-band-inner">
+<p class="section-label">What This Is</p>
+<h2 class="section-title">MORE TO <em>SEE</em></h2>
+<p>Not every opinion fits neatly into a headline. This page is where the extra stuff lives -- the images, references, and finds that inform what gets written about elsewhere on this site. Think of it as the mood board behind the arguments.</p>
+<p>It's pulled directly from a living Pinterest board, so it updates as new things get pinned. Check back for more.</p>
+</div>
+</section>
+<section class="pin-section">
+<div class="pin-section-inner">
+<p class="section-label">Live Feed</p>
+<h2 class="section-title">THE <em>BOARD</em></h2>
+<div class="pin-embed-wrap">
+<a data-pin-do="embedUser" href="https://www.pinterest.com/luxmodestudio/" data-pin-board-width="900" data-pin-scale-height="240" data-pin-scale-width="80"></a>
+</div>
+</div>
+</section>
+<footer>
+<div class="footer-inner">
+<div class="footer-brand">
+<div class="wordmark">I'll Ask <em>For It</em></div>
+<div class="tagline">Nothing But Time and Opinions</div>
+</div>
+<div class="footer-links">
+<h4>Topics</h4>
+<ul>
+<li><a href="category-opinions.html">One Man's Opinion</a></li>
+<li><a href="category-indy.html">Indy Institutions</a></li>
+<li><a href="category-food.html">Food &amp; Drink</a></li>
+<li><a href="category-music.html">Music</a></li>
+<li><a href="category-sports.html">Sports</a></li>
+<li><a href="category-travel.html">Worth the Trip</a></li>
+<li><a href="category-nostalgia.html">Nostalgia</a></li>
+<li><a href="hold-my-beer.html">Hold My Beer</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>The Site</h4>
+<ul>
+<li><a href="deeper-dive.html">Deeper Dive</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="archive.html">Full Archive</a></li>
+<li><a href="privacy-policy.html">Privacy Policy</a></li>
+<li><a href="terms-of-use.html">Terms of Use</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p class="footer-copy">&copy; 2026 <em>I'll Ask For It</em> -- Nothing But Time and Opinions</p>
+<div class="footer-legal">
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="terms-of-use.html">Terms of Use</a>
+<a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+</div>
+</div>
+</footer>
+<script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
+</body>
+</html>
