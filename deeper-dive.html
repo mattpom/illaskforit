@@ -68,6 +68,16 @@ footer{background:var(--dark);border-top:3px solid var(--accent);padding:3rem 2.
 .pin-section{background:var(--bg);padding:4rem 2.5rem 5rem}
 .pin-section-inner{max-width:1100px;margin:0 auto}
 .pin-embed-wrap{background:#fff;border:1px solid var(--border2);border-top:4px solid var(--accent);padding:2rem;margin-top:2.5rem;min-height:200px}
+.dd-featured{background:var(--bg2);padding:4rem 2.5rem;border-bottom:2px solid var(--border2)}
+.dd-featured-inner{max-width:1100px;margin:0 auto}
+.dd-featured-card{display:grid;grid-template-columns:300px 1fr;gap:0;background:#fff;border:1px solid var(--border2);border-top:4px solid var(--accent);text-decoration:none;margin-top:2.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.07)}
+.dd-featured-img{width:100%;height:auto;display:block}
+.dd-featured-content{padding:2.5rem}
+.dd-featured-tag{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:.8rem}
+.dd-featured-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1.5rem,3vw,2.1rem);text-transform:uppercase;line-height:1.15;color:var(--dark);margin-bottom:1rem}
+.dd-featured-desc{color:var(--muted);font-size:1rem;line-height:1.7;margin-bottom:1.5rem;max-width:520px}
+.dd-featured-link{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+@media(max-width:700px){.dd-featured-card{grid-template-columns:1fr}}
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VE02N4CK7"></script>
 <script>
@@ -107,6 +117,21 @@ gtag('config', 'G-7VE02N4CK7');
 <h2 class="section-title">MORE TO <em>SEE</em></h2>
 <p>Not every opinion fits neatly into a headline. This page is where the extra stuff lives -- the images, references, and finds that inform what gets written about elsewhere on this site. Think of it as the mood board behind the arguments.</p>
 <p>It's pulled directly from a living Pinterest board, so it updates as new things get pinned. Check back for more.</p>
+</div>
+</section>
+<section class="dd-featured">
+<div class="dd-featured-inner">
+<p class="section-label">Featured</p>
+<h2 class="section-title">WORTH A <em>LOOK</em></h2>
+<a href="the-smell-of-summer.html" class="dd-featured-card">
+<img src="images/poolside-summer-memories.png" alt="Poolside summer memories featuring red licorice, chlorine, hot concrete, and coconut sunscreen" class="dd-featured-img">
+<div class="dd-featured-content">
+<p class="dd-featured-tag">Nostalgia · Summer</p>
+<h3 class="dd-featured-title">Why Certain Smells and Snacks Instantly Bring Back Summer</h3>
+<p class="dd-featured-desc">Red licorice, chlorine, hot concrete, and coconut sunscreen can bring an entire summer rushing back in seconds. Here is why those small sensory memories stay with us.</p>
+<span class="dd-featured-link">Read the Story →</span>
+</div>
+</a>
 </div>
 </section>
 <section class="pin-section">
