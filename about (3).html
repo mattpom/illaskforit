@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/png" href="images/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png"><link rel="apple-touch-icon" href="images/favicon-180.png">
+<title>About — I'll Ask For It</title>
+<meta name="description" content="Sean Matthews writes I'll Ask For It — one man's opinions on food, music, travel, sports, and life. Nothing but time and opinions.">
+<meta property="og:site_name" content="I'll Ask For It">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About | I'll Ask For It">
+<meta property="og:description" content="Sean Matthews writes I'll Ask For It — one man's opinions on food, music, travel, sports, and life. Nothing but time and opinions."><meta property="og:image" content="https://illaskforit.com/images/og-default.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="About | I'll Ask For It">
+<meta name="twitter:description" content="Sean Matthews writes I'll Ask For It — one man's opinions on food, music, travel, sports, and life. Nothing but time and opinions."><meta name="twitter:image" content="https://illaskforit.com/images/og-default.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--black:#0d0000;--dark:#1a0000;--card:#2a0505;--card2:#380808;--accent:#cc0000;--accent2:#e63333;--white:#f5f5f5;--muted:rgba(245,245,245,0.6);--border:rgba(204,0,0,0.3);}
+body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;line-height:1.6}
+nav{background:var(--black);border-bottom:2px solid var(--accent);position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem}
+.nav-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.6rem;letter-spacing:-.02em;color:var(--white);text-decoration:none;white-space:nowrap;padding:1rem 0}
+.nav-wordmark em{color:var(--accent);font-style:normal}
+.nav-links{display:flex;list-style:none;gap:0}
+.nav-links a{display:block;padding:.9rem 1.1rem;white-space:nowrap;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--accent);background:rgba(204,0,0,0.08)}
+.nav-cta{background:var(--accent);color:var(--white)!important;padding:.5rem 1.2rem!important;margin-left:.5rem}
+.nav-cta:hover{background:var(--accent2)!important;color:var(--white)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.5rem}
+.hamburger span{display:block;width:24px;height:2px;background:var(--white)}
+@media(max-width:1100px){nav{position:relative}.nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--black);border-bottom:2px solid var(--accent);padding:1rem 0}.nav-links.open{display:flex}.nav-links a{padding:1rem 2rem}.hamburger{display:flex}}
+.btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;padding:.9rem 2rem;text-decoration:none;transition:background .2s}
+.btn-primary:hover{background:var(--accent2)}
+.btn-secondary{display:inline-flex;align-items:center;gap:.5rem;background:transparent;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;padding:.9rem 2rem;text-decoration:none;border:2px solid var(--border);transition:border-color .2s,color .2s}
+.btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
+footer{background:var(--dark);border-top:2px solid var(--accent);padding:3rem 2.5rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:3rem;flex-wrap:wrap}
+.footer-brand .wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;letter-spacing:-.02em;color:var(--white)}
+.footer-brand .wordmark em{color:var(--accent);font-style:normal}
+.footer-brand .tagline{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-top:.4rem}
+.footer-links h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.footer-links ul{list-style:none}
+.footer-links ul li{margin-bottom:.5rem}
+.footer-links ul a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.footer-links ul a:hover{color:var(--accent)}
+.footer-bottom{max-width:1100px;margin:2rem auto 0;padding-top:1.5rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-copy{font-size:.82rem;color:var(--muted)}
+.footer-copy em{color:var(--accent);font-style:normal}
+@media(max-width:700px){.footer-inner{flex-direction:column}.footer-bottom{flex-direction:column;text-align:center}}
+.page-hero{padding:5rem 2.5rem 3rem;border-bottom:1px solid var(--border)}
+.page-hero-inner{max-width:900px;margin:0 auto}
+.page-eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.page-headline{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3rem,7vw,6rem);line-height:.95;text-transform:uppercase;letter-spacing:-.02em;margin-bottom:1.5rem}
+.page-headline em{color:var(--accent);font-style:normal}
+.page-deck{font-size:1.2rem;color:var(--muted);max-width:620px;line-height:1.75}
+.content-section{padding:4rem 2.5rem;border-bottom:1px solid var(--border)}
+.content-inner{max-width:720px;margin:0 auto}
+.avatar-wrap{display:flex;gap:2.5rem;align-items:flex-start;flex-wrap:wrap}
+.avatar-photo{width:180px;height:180px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);box-shadow:0 0 0 6px rgba(204,0,0,0.15);flex-shrink:0}
+.avatar-text{flex:1;min-width:260px}
+@media(max-width:600px){.avatar-wrap{justify-content:center;text-align:center}.avatar-photo{margin:0 auto}}
+.section-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1.8rem,3vw,2.8rem);text-transform:uppercase;line-height:1;margin-bottom:1.5rem}
+.prose p{color:var(--muted);font-size:1.05rem;line-height:1.85;margin-bottom:1.4rem}
+.prose strong{color:var(--white);font-weight:600}
+.pull-quote{border-left:4px solid var(--accent);padding:1.5rem 2rem;margin:2.5rem 0;background:var(--dark)}
+.pull-quote p{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.4rem;text-transform:uppercase;line-height:1.2;color:var(--white);margin:0}
+.pull-quote cite{display:block;margin-top:.8rem;font-family:'Barlow Condensed',sans-serif;font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-style:normal}
+.category-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);margin-top:2rem}
+.cat-item{background:var(--dark);padding:1.8rem}
+.cat-item-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+.cat-item-desc{font-size:.88rem;color:var(--muted)}
+.contact-section{padding:4rem 2.5rem}
+.contact-inner{max-width:720px;margin:0 auto}
+@media(max-width:600px){.category-grid{grid-template-columns:1fr}}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7VE02N4CK7"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-7VE02N4CK7');
+</script>
+</head>
+<body>
+<nav>
+<a href="index.html" class="nav-wordmark">I'll Ask <em>For It</em></a>
+<ul class="nav-links" id="navLinks">
+<li><a href="category-opinions.html">One Man's Opinion</a></li>
+<li><a href="category-indy.html">Circle City</a></li>
+<li><a href="category-food.html">Food &amp; Drink</a></li>
+<li><a href="category-music.html">Music</a></li>
+<li><a href="category-sports.html">Sports</a></li>
+<li><a href="category-travel.html">Worth the Trip</a></li>
+<li><a href="category-nostalgia.html">Nostalgia</a></li>
+<li><a href="things-you-didnt-know-you-needed.html">Cool Shit</a></li><li><a href="deeper-dive.html">Deeper Dive</a></li><li><a href="about.html" class="nav-cta">About</a></li>
+</ul>
+<button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<section class="page-hero">
+<div class="page-hero-inner">
+<p class="page-eyebrow">About This Site</p>
+<h1 class="page-headline">Nothing But <em>Time and Opinions</em></h1>
+<p class="page-deck">No editor. No sponsor. No algorithm. Just one person with a specific set of opinions, enough time to write them down, and a website to put them on.</p>
+<p class="page-eyebrow" style="margin-top:1.5rem;margin-bottom:0">Words by Sean Matthews</p>
+</div>
+</section>
+<section class="content-section">
+<div class="content-inner">
+<p class="section-label">Who's Asking</p>
+<h2 class="section-title">MEET SEAN MATTHEWS</h2>
+<div class="avatar-wrap">
+<img src="images/sean-matthews-avatar.jpg" alt="Sean Matthews" class="avatar-photo">
+<div class="avatar-text prose">
+<p>Sean Matthews grew up on the north side of Indianapolis — fourth grade through high school, same city the whole way — and graduated from Indiana University, in a subject he no longer discusses. He's been banned from exactly one trivia night. He's been to fourteen countries and still maintains the best meal of his life was a gas station in southern Indiana. Food, travel, sports, and music are the whole personality, in roughly that order of importance, and Buffalo Louie's is a second address.</p>
+<p>He started I'll Ask For It because he has a lot of opinions and no one was asking for them anyway. He is right about Steve Perry.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="content-section">
+<div class="content-inner">
+<p class="section-label">The Concept</p>
+<h2 class="section-title">WHAT IS I'LL ASK FOR IT</h2>
+<div class="prose">
+<p>The name is the punchline. The full version of the joke is: "If I want your opinion, I'll ask for it." You've heard it. It's dismissive. It's the thing people say when they want you to shut up.</p>
+<p><strong>This site is only the punchline.</strong> "I'll Ask For It." As in: I'm the one who asked. I'm the one who has them. You're here, so now you're getting them.</p>
+<p>There are no news articles here. No PR pretending to be journalism. No product guide dressed up as "neutral." And when there's a Top 10 list — because sometimes a ranking is the fastest way to make an argument — it's not search-engine bait. It's a ranking. My ranking. Disagree with it if you want, that's the whole point of this site. What you'll find here is a specific, subjective, completely personal take on bagels, Steve Perry, Buffalo Louie's, San Sebastián, great sports duos, the best albums, the best trails, and whatever else needed an opinion this week.</p>
+<p>The tagline is: <strong>Nothing but time and opinions.</strong> That's both a description and an admission. The time is real. The opinions are real. The rest is up for debate.</p>
+</div>
+</div>
+</section>
+<section class="content-section">
+<div class="content-inner">
+<div class="pull-quote">
+<p>"If I want your opinion, I'll ask for it."</p>
+<cite>The implied joke. The whole concept. The site name.</cite>
+</div>
+<div class="prose">
+<p>Every article on this site carries the same byline under the headline: <strong>Words by Sean Matthews.</strong> <em>The True Bagel Triumvirate. No, You Can Be My Wingman. Journey Is Not Journey Without Steve Perry.</em> Same name, every time, right below the title.</p>
+<p>It creates a conversation with the reader. It's short. It's consistent. It's easy to spot scrolling past. And it means the same thing every time: you're about to get one man's opinion on something, unfiltered and unasked for.</p>
+</div>
+</div>
+</section>
+<section class="content-section">
+<div class="content-inner">
+<p class="section-label">The Categories</p>
+<h2 class="section-title">WHAT WE COVER</h2>
+<div class="category-grid">
+<div class="cat-item"><div class="cat-item-name">🎯 One Man's Opinion</div><div class="cat-item-desc">The catch-all. Music legends, cultural moments, anything that needed a verdict.</div></div>
+<div class="cat-item"><div class="cat-item-name">🏙️ Circle City</div><div class="cat-item-desc">Everything Indianapolis, in one place. Institutions, restaurants, sports moments, and things to do.</div></div>
+<div class="cat-item"><div class="cat-item-name">🍽️ Food &amp; Drink</div><div class="cat-item-desc">Bagel rankings. Restaurant verdicts. No recipes. Just opinions on what's worth eating.</div></div>
+<div class="cat-item"><div class="cat-item-name">🎵 Music</div><div class="cat-item-desc">Strong takes on bands, voices, and moments in music history.</div></div>
+<div class="cat-item"><div class="cat-item-name">🏆 Sports</div><div class="cat-item-desc">Wingmen, sidekicks, all-time debates. The sports conversations everyone's already having.</div></div>
+<div class="cat-item"><div class="cat-item-name">✈️ Worth the Trip</div><div class="cat-item-desc">Places that genuinely earned it. You'll know the difference when you get there.</div></div>
+<div class="cat-item"><div class="cat-item-name">📼 Nostalgia</div><div class="cat-item-desc">Time machines, childhood memories, the things from back then that still hold up.</div></div>
+<div class="cat-item"><div class="cat-item-name">🍺 Hold My Beer</div><div class="cat-item-desc">The series. The story. The three words that started it and the chaos that followed.</div></div>
+<div class="cat-item"><div class="cat-item-name">🔟 Top 10 Lists</div><div class="cat-item-desc">Rankings, not roundups. Albums, athletes, restaurants, trails. Somebody has to actually pick a number one instead of hedging.</div></div>
+<div class="cat-item"><div class="cat-item-name">🛒 Cool Shit</div><div class="cat-item-desc">A few things worth owning. Nobody asked an opinion site for a shopping list. Here's one anyway.</div></div>
+</div>
+</div>
+</section>
+<section class="contact-section" id="contact">
+<div class="contact-inner">
+<p class="section-label">Get In Touch</p>
+<h2 class="section-title">AGREE? DISAGREE?</h2>
+<div class="prose" style="margin-top:1.5rem">
+<p>Either way, that's the point. If something on this site made you think "he's wrong" or "finally, someone said it" — both reactions are correct. The opinions are real. The conversation is the whole thing.</p>
+<p>If you genuinely need to reach out, the site name tells you what to do. Ask for it.</p>
+<p style="margin-top:1.5rem"><a href="mailto:hello@illaskforit.com" style="color:var(--accent);font-weight:600;text-decoration:none">hello@illaskforit.com</a></p>
+</div>
+<a href="index.html" class="btn-primary" style="margin-top:2rem">← Back to the Opinions</a>
+</div>
+</section>
+<footer>
+<div class="footer-inner">
+<div class="footer-brand"><div class="wordmark">I'll Ask <em>For It</em></div><div class="tagline">Nothing But Time and Opinions</div></div>
+<div class="footer-links"><h4>Topics</h4><ul>
+<li><a href="category-opinions.html">One Man's Opinion</a></li>
+<li><a href="category-indy.html">Circle City</a></li>
+<li><a href="category-food.html">Food &amp; Drink</a></li>
+<li><a href="category-music.html">Music</a></li>
+<li><a href="category-sports.html">Sports</a></li>
+<li><a href="category-travel.html">Worth the Trip</a></li>
+<li><a href="category-nostalgia.html">Nostalgia</a></li>
+<li><a href="hold-my-beer.html">Hold My Beer</a></li>
+</ul></div>
+<div class="footer-links"><h4>The Site</h4><ul>
+<li><a href="about.html">About</a></li>
+<li><a href="archive.html">Full Archive</a></li>
+<li><a href="about.html#contact">Contact</a></li>
+</ul></div>
+</div>
+<div class="footer-bottom">
+<p class="footer-copy">© 2026 <em>I'll Ask For It</em> · Nothing But Time and Opinions</p>
+<div class="footer-legal">
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="terms-of-use.html">Terms of Use</a>
+<a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+</div>
+<p class="footer-copy">Opinions are free. Agreement is optional.</p>
+</div>
+</footer>
+</body>
+</html>
