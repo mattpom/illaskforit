@@ -55,6 +55,10 @@ footer{background:var(--dark);border-top:2px solid var(--accent);padding:3rem 2.
 .page-deck{font-size:1.2rem;color:var(--muted);max-width:620px;line-height:1.75}
 .content-section{padding:4rem 2.5rem;border-bottom:1px solid var(--border)}
 .content-inner{max-width:720px;margin:0 auto}
+.avatar-wrap{display:flex;gap:2.5rem;align-items:flex-start;flex-wrap:wrap}
+.avatar-photo{width:180px;height:180px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);box-shadow:0 0 0 6px rgba(204,0,0,0.15);flex-shrink:0}
+.avatar-text{flex:1;min-width:260px}
+@media(max-width:600px){.avatar-wrap{justify-content:center;text-align:center}.avatar-photo{margin:0 auto}}
 .section-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
 .section-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1.8rem,3vw,2.8rem);text-transform:uppercase;line-height:1;margin-bottom:1.5rem}
 .prose p{color:var(--muted);font-size:1.05rem;line-height:1.85;margin-bottom:1.4rem}
@@ -105,9 +109,12 @@ gtag('config', 'G-7VE02N4CK7');
 <div class="content-inner">
 <p class="section-label">Who's Asking</p>
 <h2 class="section-title">MEET SEAN MATTHEWS</h2>
-<div class="prose">
+<div class="avatar-wrap">
+<img src="images/sean-matthews-avatar.jpg" alt="Sean Matthews" class="avatar-photo">
+<div class="avatar-text prose">
 <p>Sean Matthews grew up on the north side of Indianapolis — fourth grade through high school, same city the whole way — and graduated from Indiana University, in a subject he no longer discusses. He's been banned from exactly one trivia night. He's been to fourteen countries and still maintains the best meal of his life was a gas station in southern Indiana. Food, travel, sports, and music are the whole personality, in roughly that order of importance, and Buffalo Louie's is a second address.</p>
 <p>He started I'll Ask For It because he has a lot of opinions and no one was asking for them anyway. He is right about Steve Perry.</p>
+</div>
 </div>
 </div>
 </section>
