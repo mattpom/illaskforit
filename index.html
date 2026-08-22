@@ -150,6 +150,19 @@ footer{background:var(--dark);border-top:3px solid var(--accent);padding:3rem 2.
 .series-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dark);margin-bottom:.5rem;transition:color .2s}
 .series-desc{font-size:.85rem;color:var(--muted);transition:color .2s}
 @media(max-width:700px){.series-grid{grid-template-columns:1fr 1fr}}
+
+.newsletter-band{background:var(--dark);padding:5rem 2.5rem;border-top:3px solid var(--accent);text-align:center}
+.newsletter-inner{max-width:600px;margin:0 auto}
+.newsletter-band .section-label{color:var(--accent)}
+.newsletter-band .section-title{color:#fff}
+.newsletter-desc{color:rgba(255,255,255,0.7);font-size:1.05rem;line-height:1.7;margin-bottom:2rem}
+.newsletter-form{display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center}
+.newsletter-input{flex:1;min-width:240px;padding:.9rem 1.2rem;border:2px solid var(--border2);background:#fff;color:var(--dark);font-family:'Barlow',sans-serif;font-size:1rem}
+.newsletter-input:focus{outline:none;border-color:var(--accent)}
+.newsletter-hidden{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.newsletter-btn{border:none;cursor:pointer}
+.newsletter-fine{color:rgba(255,255,255,0.45);font-size:.8rem;margin-top:1.2rem}
+@media(max-width:500px){.newsletter-form{flex-direction:column}}
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VE02N4CK7"></script>
 <script>
@@ -332,6 +345,20 @@ gtag('config', 'G-7VE02N4CK7');
 <a href="category-indy.html" class="series-card"><div class="series-num">🏙️</div><div class="series-name">Circle City</div><div class="series-desc">Indianapolis is underrated. These are the receipts.</div></a>
 <a href="hold-my-beer.html" class="series-card"><div class="series-num">🍺</div><div class="series-name">Hold My Beer</div><div class="series-desc">The series. The story. The three words that started all of it.</div></a>
 </div>
+</div>
+</section>
+<section class="newsletter-band">
+<div class="newsletter-inner">
+<p class="section-label">Get In Your Inbox</p>
+<h2 class="section-title">NOTHING BUT TIME <em>AND OPINIONS</em></h2>
+<p class="newsletter-desc">Nothing but time and opinions, straight to your inbox. New posts, no spam.</p>
+<form method="POST" action="https://179420ee.sibforms.com/serve/MUIFAOG_h0Zu6mjnbeuxTal3ARi8fdalgbrZq5POPWK8EnUz3umwZs871Muswgcd3wLqVVNdb7nTfto2F0V6HMiGJqDr8yymQQoc_VRON2v44KqrRXvf8IjnIs8GHcoW5ERd0raA9kmu2lzl4a57LV4cZE5jJRZVv4xCB7HCm4dR1cTvaHlUju_rErZDji86pX-gdbQVkYM3m1dprA==" class="newsletter-form">
+<input type="email" name="EMAIL" placeholder="your@email.com" required class="newsletter-input">
+<input type="text" name="email_address_check" value="" class="newsletter-hidden" tabindex="-1" autocomplete="off">
+<input type="hidden" name="locale" value="en">
+<button type="submit" class="btn-primary newsletter-btn">Subscribe</button>
+</form>
+<p class="newsletter-fine">No spam. Unsubscribe whenever you want.</p>
 </div>
 </section>
 <footer>
