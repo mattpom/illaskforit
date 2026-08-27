@@ -1,0 +1,18 @@
+ILLASKFORIT.COM LIGHT THEME UPDATE
+
+YES — UNZIP THIS PACKAGE BEFORE UPLOADING.
+
+1. Extract the ZIP on your computer.
+2. Open the extracted illaskforit_light_theme folder.
+3. Upload all 25 HTML files to the ROOT of the mattpom/illaskforit GitHub repository.
+4. When GitHub asks, replace the existing files with the same names.
+5. Commit the changes to the main branch.
+
+Do not upload the ZIP itself to the repository.
+Do not place the extracted folder inside the repository.
+
+The files preserve the black navigation and footer, red accents, and bold typography.
+Article, category, archive, About, and legal pages now use light editorial backgrounds,
+dark readable body text, white cards, and dark pull-quote/verdict boxes.
+
+The existing homepage is not included because it already uses the intended light palette.
