@@ -1,45 +1,156 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://illaskforit.com/</loc><lastmod>2026-09-22</lastmod></url>
-<url><loc>https://illaskforit.com/about.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/affiliate-disclosure.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/archive.html</loc><lastmod>2026-09-22</lastmod></url>
-<url><loc>https://illaskforit.com/bagel-triumvirate.html</loc><lastmod>2026-08-21</lastmod></url>
-<url><loc>https://illaskforit.com/buffalo-louies.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/category-food.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/category-indy.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/category-music.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/category-nostalgia.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/category-opinions.html</loc><lastmod>2026-09-22</lastmod></url>
-<url><loc>https://illaskforit.com/category-sports.html</loc><lastmod>2026-09-15</lastmod></url>
-<url><loc>https://illaskforit.com/category-travel.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/go-for-the-wings.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/hold-my-beer.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/journey-steve-perry.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/privacy-policy.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/san-sebastian.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/terms-of-use.html</loc><lastmod>2026-07-15</lastmod></url>
-  <url><loc>https://illaskforit.com/the-smell-of-summer.html</loc><lastmod>2026-07-30</lastmod></url>
-<url><loc>https://illaskforit.com/things-you-didnt-know-you-needed.html</loc><lastmod>2026-09-15</lastmod></url>
-<url><loc>https://illaskforit.com/time-machine.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/top10-albums.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/top10-athletes.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/top10-indy-sports.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/top10-restaurants.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/top10-things-to-do.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/top10-trails.html</loc><lastmod>2026-07-15</lastmod></url>
-<url><loc>https://illaskforit.com/wingman.html</loc><lastmod>2026-08-21</lastmod></url>
-<url><loc>https://illaskforit.com/deeper-dive.html</loc><lastmod>2026-08-30</lastmod></url>
-<url><loc>https://illaskforit.com/geist-reservoir-lake-days.html</loc><lastmod>2026-08-21</lastmod></url>
-<url><loc>https://illaskforit.com/geist-reservoir-painted-memories.html</loc><lastmod>2026-08-21</lastmod></url>
-<url><loc>https://illaskforit.com/the-case-for-doing-nothing.html</loc><lastmod>2026-08-21</lastmod></url>
-<url><loc>https://illaskforit.com/vinyl-is-the-only-way.html</loc><lastmod>2026-08-21</lastmod></url>
-<url><loc>https://illaskforit.com/roberto-clemente-best-right-fielder.html</loc><lastmod>2026-08-30</lastmod></url>
+  <url>
+    <loc>https://illaskforit.com/</loc>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/about.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/affiliate-disclosure.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/archive.html</loc>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/bagel-triumvirate.html</loc>
+    <lastmod>2026-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/buffalo-louies.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/category-food.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/category-indy.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/category-music.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/category-nostalgia.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/category-opinions.html</loc>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/category-sports.html</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/category-travel.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/go-for-the-wings.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/hold-my-beer.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/journey-steve-perry.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/privacy-policy.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/san-sebastian.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/terms-of-use.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/the-smell-of-summer.html</loc>
+    <lastmod>2026-07-30</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/things-you-didnt-know-you-needed.html</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/time-machine.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/top10-albums.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/top10-athletes.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/top10-indy-sports.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/top10-restaurants.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/top10-things-to-do.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/top10-trails.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/wingman.html</loc>
+    <lastmod>2026-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/deeper-dive.html</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/geist-reservoir-lake-days.html</loc>
+    <lastmod>2026-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/geist-reservoir-painted-memories.html</loc>
+    <lastmod>2026-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/the-case-for-doing-nothing.html</loc>
+    <lastmod>2026-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/vinyl-is-the-only-way.html</loc>
+    <lastmod>2026-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/roberto-clemente-best-right-fielder.html</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
   <url>
     <loc>https://illaskforit.com/best-first-date-indianapolis-art-museum.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-<url><loc>https://illaskforit.com/can-we-just-make-the-play.html</loc><lastmod>2026-09-13</lastmod></url>
-<url><loc>https://illaskforit.com/can-you-get-off-your-freaking-phone.html</loc><lastmod>2026-09-22</lastmod></url>
+  <url>
+    <loc>https://illaskforit.com/can-we-just-make-the-play.html</loc>
+    <lastmod>2026-09-13</lastmod>
+  </url>
+  <url>
+    <loc>https://illaskforit.com/can-you-get-off-your-freaking-phone.html</loc>
+    <lastmod>2026-09-22</lastmod>
+  </url>
 </urlset>
