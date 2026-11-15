@@ -1,0 +1,14 @@
+{
+  "name": "illaskforit-comments",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "illaskforit-comments",
+    // Set the real database_id returned by Cloudflare before deployment.
+    "database_id": "",
+    "migrations_dir": "migrations"
+  }],
+  "triggers": { "crons": ["17 4 * * *"] }
+}
